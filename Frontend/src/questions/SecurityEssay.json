@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "question": "Discuss three types of program threats and provide an example for each."
+  },
+  {
+    "id": 2,
+    "question": "What are the differences between symmetric and asymmetric encryption? Provide examples."
+  },
+  {
+    "id": 3,
+    "question": "Describe four types of accidental or malicious security violations. At which levels can security be enforced?"
+  },
+  {
+    "id": 4,
+    "question": "Explain the essential properties of a good encryption algorithm."
+  },
+  {
+    "id": 5,
+    "question": "Define and differentiate between cryptography, encryption, and decryption."
+  },
+  {
+    "id": 6,
+    "question": "Discuss system-level security threats and give real-world examples."
+  },
+  {
+    "id": 7,
+    "question": "Explain how authentication and authorization differ and how each is implemented in systems."
+  },
+  {
+    "id": 8,
+    "question": "List and explain three levels at which security can be applied in a computer system."
+  },
+  {
+    "id": 9,
+    "question": "Compare DES and RSA encryption algorithms. In which use-cases are they applied?"
+  },
+  {
+    "id": 10,
+    "question": "What are the common threats in network security? How can they be mitigated?"
+  },
+  {
+    "id": 11,
+    "question": "Describe the concept of public and private keys. How are they used in secure communication?"
+  },
+  {
+    "id": 12,
+    "question": "What are program-level attacks? Give three examples and their consequences."
+  },
+  {
+    "id": 13,
+    "question": "Explain the importance of user education and policy enforcement in maintaining system security."
+  },
+  {
+    "id": 14,
+    "question": "Discuss the role of encryption in maintaining data integrity and confidentiality."
+  },
+  {
+    "id": 15,
+    "question": "What is the difference between passive and active security attacks? Give examples."
+  },
+  {
+    "id": 16,
+    "question": "Explain how viruses, worms, and trojans operate. What measures help prevent them?"
+  },
+  {
+    "id": 17,
+    "question": "Describe how firewalls and intrusion detection systems contribute to security."
+  },
+  {
+    "id": 18,
+    "question": "What is hashing? How does it differ from encryption?"
+  },
+  {
+    "id": 19,
+    "question": "List common cryptography terms and define their significance (e.g., cipher, plaintext, key)."
+  },
+  {
+    "id": 20,
+    "question": "How can multi-factor authentication increase the security of systems and services?"
+  }
+]

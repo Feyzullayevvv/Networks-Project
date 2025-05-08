@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "question": "Explain the client-server model and the role of sockets in enabling network communication. Include examples."
+  },
+  {
+    "id": 2,
+    "question": "Discuss the main differences between TCP and UDP. In what scenarios would each be preferred?"
+  },
+  {
+    "id": 3,
+    "question": "Describe the structure and function of IPv4 datagrams, including fragmentation and reassembly."
+  },
+  {
+    "id": 4,
+    "question": "Compare and contrast the OSI and TCP/IP models. Highlight their layers and primary functions."
+  },
+  {
+    "id": 5,
+    "question": "Describe the responsibilities of each layer in the OSI model, providing examples of protocols at each layer."
+  },
+  {
+    "id": 6,
+    "question": "Explain how HTTP functions as a web application protocol. Describe the request/response cycle."
+  },
+  {
+    "id": 7,
+    "question": "What are protocol ports and why are they essential in networking? Provide examples of well-known ports."
+  },
+  {
+    "id": 8,
+    "question": "Illustrate how email services use SMTP, POP3, IMAP and HTTP protocols."
+  },
+  {
+    "id": 9,
+    "question": "Discuss the concept of reliable data transfer. How does TCP achieve it?"
+  },
+  {
+    "id": 10,
+    "question": "Define congestion control and flow control. Why are they important in the transport layer?"
+  },
+  {
+    "id": 11,
+    "question": "Explain how processes communicate over a network using IP addresses and port numbers."
+  },
+  {
+    "id": 12,
+    "question": "Describe the role of the router in a network. What are its main components?"
+  },
+  {
+    "id": 13,
+    "question": "Compare distance-vector and link-state routing algorithms. Which is more efficient and why?"
+  },
+  {
+    "id": 14,
+    "question": "What is multiplexing and demultiplexing in transport services? Explain with examples."
+  },
+  {
+    "id": 15,
+    "question": "Describe how IPv6 differs from IPv4. What are its main advantages?"
+  },
+  {
+    "id": 16,
+    "question": "Discuss the use of acknowledgments and sequence numbers in TCP segment structures."
+  },
+  {
+    "id": 17,
+    "question": "What is the role of RFCs in Internet standards? Describe how they are published and used."
+  },
+  {
+    "id": 18,
+    "question": "Discuss peer-to-peer (P2P) networking. How does it differ from the client-server model?"
+  },
+  {
+    "id": 19,
+    "question": "What is throughput in networking? How does it differ from data rate and latency?"
+  },
+  {
+    "id": 20,
+    "question": "Explain message exchange patterns in distributed systems. Give an example of a typical message flow."
+  }
+]

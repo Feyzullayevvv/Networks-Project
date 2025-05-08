@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "question": "What is a process? Describe its structure and how it is managed by the operating system."
+  },
+  {
+    "id": 2,
+    "question": "Explain the process lifecycle and the role of process states. Use diagrams if necessary."
+  },
+  {
+    "id": 3,
+    "question": "Describe how threads differ from processes. What are the advantages of using threads?"
+  },
+  {
+    "id": 4,
+    "question": "Explain the concept of a critical section. Why is it important in concurrent programming?"
+  },
+  {
+    "id": 5,
+    "question": "What are the key services provided by an operating system? Explain their purpose."
+  },
+  {
+    "id": 6,
+    "question": "Discuss system calls and their role in operating systems. Give examples."
+  },
+  {
+    "id": 7,
+    "question": "Compare mutex locks, semaphores, and monitors in terms of synchronization."
+  },
+  {
+    "id": 8,
+    "question": "What is the bounded buffer problem? Describe a solution using semaphores."
+  },
+  {
+    "id": 9,
+    "question": "Explain the race condition and how it can be prevented in an operating system."
+  },
+  {
+    "id": 10,
+    "question": "Define process scheduling. Describe the role of schedulers and queues."
+  },
+  {
+    "id": 11,
+    "question": "Describe thread states in Java. How are they managed during execution?"
+  },
+  {
+    "id": 12,
+    "question": "What is the difference between user-level threads and kernel-level threads?"
+  },
+  {
+    "id": 13,
+    "question": "Define starvation and deadlock. How can each be avoided or resolved?"
+  },
+  {
+    "id": 14,
+    "question": "Discuss the role of the Process Control Block (PCB) in operating systems."
+  },
+  {
+    "id": 15,
+    "question": "Explain the use and function of system programs in OS design."
+  },
+  {
+    "id": 16,
+    "question": "What is parallelism and how does it differ from concurrency?"
+  },
+  {
+    "id": 17,
+    "question": "Describe the synchronization problem and the requirements for its solution."
+  },
+  {
+    "id": 18,
+    "question": "What interfaces does an operating system provide to users and programs?"
+  },
+  {
+    "id": 19,
+    "question": "Explain how semaphores can be used to solve the producer-consumer problem."
+  },
+  {
+    "id": 20,
+    "question": "Discuss Java thread lifecycle states and transitions with examples."
+  }
+]
