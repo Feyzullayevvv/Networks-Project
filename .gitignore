@@ -3,3 +3,5 @@ Frontend/node_modules/
 Backend/node_modules/
 .env
 .DS_Store
+# ignore env
+.env
