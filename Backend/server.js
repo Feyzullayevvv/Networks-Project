@@ -41,7 +41,7 @@ ${answer}`;
   }
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`✅ Gemini backend is running on http://localhost:${PORT}`);
+  console.log(`✅ Gemini backend is running on port ${PORT}`);
 });
