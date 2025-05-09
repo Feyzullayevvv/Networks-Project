@@ -408,21 +408,9 @@
     "answer": "Cookies are used to maintain session state in stateless HTTP"
   },
   {
-    "id": 40,
-    "topic": "Network Layer",
-    "question": "What is the main function of an ARP (Address Resolution Protocol) request?",
-    "options": [
-      "To authenticate two endpoints in a secure session",
-      "To broadcast packets to all nodes",
-      "To retrieve a DNS record from a domain",
-      "To resolve MAC addresses from IP addresses"
-    ],
-    "answer": "To resolve MAC addresses from IP addresses"
-  },
-  {
     "id": 41,
     "topic": "Application Layer",
-    "question": "Which application layer protocol translates domain names into IP addresses?",
+    "question": "(?)Which application layer protocol translates domain names into IP addresses?",
     "options": ["FTP", "SMTP", "DNS", "DHCP"],
     "answer": "DNS"
   },
@@ -501,18 +489,6 @@
       "Receiving emails"
     ],
     "answer": "Sending emails"
-  },
-  {
-    "id": 50,
-    "topic": "Network Layer",
-    "question": "What is the function of NAT (Network Address Translation)?",
-    "options": [
-      "Translate private IPs to public IPs",
-      "Encrypt traffic",
-      "Route multicast packets",
-      "Scan for malware"
-    ],
-    "answer": "Translate private IPs to public IPs"
   },
   {
     "id": 51,
@@ -686,13 +662,6 @@
     "answer": "A synchronization method that blocks until all threads reach it"
   },
   {
-    "id": 69,
-    "topic": "Application Layer",
-    "question": "Which application layer protocol is used to transfer files securely?",
-    "options": ["SFTP", "Telnet", "HTTP", "SMTP"],
-    "answer": "SFTP"
-  },
-  {
     "id": 70,
     "topic": "Network Layer",
     "question": "What is the purpose of a routing algorithm in the network layer?",
@@ -808,5 +777,561 @@
     "question": "Which device maintains and updates routing tables in a network?",
     "options": ["Router", "Firewall", "Hub", "Switch"],
     "answer": "Router"
+  },
+  {
+    "id": 81,
+    "topic": "Application Layer",
+    "question": "Which protocol is used to retrieve emails from a server?",
+    "options": ["POP3", "SMTP", "DNS", "FTP"],
+    "answer": "POP3"
+  },
+  {
+    "id": 82,
+    "topic": "Application Layer",
+    "question": "Which of the following is a stateless protocol?",
+    "options": ["TCP", "FTP", "SMTP", "HTTP"],
+    "answer": "HTTP"
+  },
+  {
+    "id": 83,
+    "topic": "Application Layer",
+    "question": "Which protocol is responsible for transferring files over the internet?",
+    "options": ["HTTP", "FTP", "DNS", "SMTP"],
+    "answer": "FTP"
+  },
+  {
+    "id": 84,
+    "topic": "Application Layer",
+    "question": "Which of the following is a stateless protocol?",
+    "options": ["TCP", "FTP", "SMTP", "HTTP"],
+    "answer": "HTTP"
+  },
+  {
+    "id": 85,
+    "topic": "Application Layer",
+    "question": "Which protocol is responsible for transferring files over the internet?",
+    "options": ["HTTP", "FTP", "DNS", "SMTP"],
+    "answer": "FTP"
+  },
+  {
+    "id": 86,
+    "topic": "Application Layer",
+    "question": "Which protocol is responsible for transferring files over the internet?",
+    "options": ["HTTP", "FTP", "DNS", "SMTP"],
+    "answer": "FTP"
+  },
+  {
+    "id": 87,
+    "topic": "Application Layer",
+    "question": "Which protocol is used to retrieve emails from a server?",
+    "options": ["POP3", "SMTP", "DNS", "FTP"],
+    "answer": "POP3"
+  },
+  {
+    "id": 88,
+    "topic": "Application Layer",
+    "question": "Which protocol is responsible for transferring files over the internet?",
+    "options": ["HTTP", "FTP", "DNS", "SMTP"],
+    "answer": "FTP"
+  },
+  {
+    "id": 89,
+    "topic": "Application Layer",
+    "question": "Which protocol is responsible for transferring files over the internet?",
+    "options": ["HTTP", "FTP", "DNS", "SMTP"],
+    "answer": "FTP"
+  },
+  {
+    "id": 90,
+    "topic": "Application Layer",
+    "question": "Which protocol is used to retrieve emails from a server?",
+    "options": ["POP3", "SMTP", "DNS", "FTP"],
+    "answer": "POP3"
+  },
+  {
+    "id": 91,
+    "topic": "Network Layer",
+    "question": "Which device works at the network layer?",
+    "options": ["Router", "Hub", "Switch", "Bridge"],
+    "answer": "Router"
+  },
+  {
+    "id": 92,
+    "topic": "Network Layer",
+    "question": "Which protocol is responsible for error messages in the network layer?",
+    "options": ["ICMP", "TCP", "FTP", "DHCP"],
+    "answer": "ICMP"
+  },
+  {
+    "id": 93,
+    "topic": "Network Layer",
+    "question": "Which device works at the network layer?",
+    "options": ["Router", "Hub", "Switch", "Bridge"],
+    "answer": "Router"
+  },
+  {
+    "id": 94,
+    "topic": "Network Layer",
+    "question": "Which device works at the network layer?",
+    "options": ["Router", "Hub", "Switch", "Bridge"],
+    "answer": "Router"
+  },
+  {
+    "id": 95,
+    "topic": "Network Layer",
+    "question": "Which protocol is responsible for error messages in the network layer?",
+    "options": ["ICMP", "TCP", "FTP", "DHCP"],
+    "answer": "ICMP"
+  },
+  {
+    "id": 96,
+    "topic": "Network Layer",
+    "question": "Which device works at the network layer?",
+    "options": ["Router", "Hub", "Switch", "Bridge"],
+    "answer": "Router"
+  },
+  {
+    "id": 97,
+    "topic": "Network Layer",
+    "question": "Which protocol is responsible for error messages in the network layer?",
+    "options": ["ICMP", "TCP", "FTP", "DHCP"],
+    "answer": "ICMP"
+  },
+  {
+    "id": 98,
+    "topic": "Network Layer",
+    "question": "Which device works at the network layer?",
+    "options": ["Router", "Hub", "Switch", "Bridge"],
+    "answer": "Router"
+  },
+  {
+    "id": 99,
+    "topic": "Network Layer",
+    "question": "Which protocol is responsible for error messages in the network layer?",
+    "options": ["ICMP", "TCP", "FTP", "DHCP"],
+    "answer": "ICMP"
+  },
+  {
+    "id": 100,
+    "topic": "Distributed Systems",
+    "question": "In distributed systems, which concept ensures components can fail independently?",
+    "options": ["Coupling", "Fault Tolerance", "Latency", "Encapsulation"],
+    "answer": "Fault Tolerance"
+  },
+  {
+    "id": 101,
+    "topic": "Distributed Systems",
+    "question": "Which component helps remote method invocation?",
+    "options": ["RPC", "UDP", "TCP", "DNS"],
+    "answer": "RPC"
+  },
+  {
+    "id": 102,
+    "topic": "Distributed Systems",
+    "question": "Which component helps remote method invocation?",
+    "options": ["RPC", "UDP", "TCP", "DNS"],
+    "answer": "RPC"
+  },
+  {
+    "id": 103,
+    "topic": "Distributed Systems",
+    "question": "In distributed systems, which concept ensures components can fail independently?",
+    "options": ["Coupling", "Fault Tolerance", "Latency", "Encapsulation"],
+    "answer": "Fault Tolerance"
+  },
+  {
+    "id": 104,
+    "topic": "Distributed Systems",
+    "question": "In distributed systems, which concept ensures components can fail independently?",
+    "options": ["Coupling", "Fault Tolerance", "Latency", "Encapsulation"],
+    "answer": "Fault Tolerance"
+  },
+  {
+    "id": 105,
+    "topic": "Distributed Systems",
+    "question": "Which component helps remote method invocation?",
+    "options": ["RPC", "UDP", "TCP", "DNS"],
+    "answer": "RPC"
+  },
+  {
+    "id": 106,
+    "topic": "Distributed Systems",
+    "question": "In distributed systems, which concept ensures components can fail independently?",
+    "options": ["Coupling", "Fault Tolerance", "Latency", "Encapsulation"],
+    "answer": "Fault Tolerance"
+  },
+  {
+    "id": 107,
+    "topic": "Distributed Systems",
+    "question": "In distributed systems, which concept ensures components can fail independently?",
+    "options": ["Coupling", "Fault Tolerance", "Latency", "Encapsulation"],
+    "answer": "Fault Tolerance"
+  },
+  {
+    "id": 108,
+    "topic": "Distributed Systems",
+    "question": "Which component helps remote method invocation?",
+    "options": ["RPC", "UDP", "TCP", "DNS"],
+    "answer": "RPC"
+  },
+  {
+    "id": 109,
+    "topic": "Transport Layer",
+    "question": "UDP is often used in which of the following?",
+    "options": ["Email", "Streaming", "File Transfer", "Login"],
+    "answer": "Streaming"
+  },
+  {
+    "id": 110,
+    "topic": "Transport Layer",
+    "question": "Which field in a TCP header is used to identify the sending application?",
+    "options": ["Port", "ACK", "TTL", "Window"],
+    "answer": "Port"
+  },
+  {
+    "id": 111,
+    "topic": "Transport Layer",
+    "question": "UDP is often used in which of the following?",
+    "options": ["Email", "Streaming", "File Transfer", "Login"],
+    "answer": "Streaming"
+  },
+  {
+    "id": 112,
+    "topic": "Transport Layer",
+    "question": "UDP is often used in which of the following?",
+    "options": ["Email", "Streaming", "File Transfer", "Login"],
+    "answer": "Streaming"
+  },
+  {
+    "id": 113,
+    "topic": "Transport Layer",
+    "question": "Which field in a TCP header is used to identify the sending application?",
+    "options": ["Port", "ACK", "TTL", "Window"],
+    "answer": "Port"
+  },
+  {
+    "id": 114,
+    "topic": "Transport Layer",
+    "question": "UDP is often used in which of the following?",
+    "options": ["Email", "Streaming", "File Transfer", "Login"],
+    "answer": "Streaming"
+  },
+  {
+    "id": 115,
+    "topic": "Transport Layer",
+    "question": "UDP is often used in which of the following?",
+    "options": ["Email", "Streaming", "File Transfer", "Login"],
+    "answer": "Streaming"
+  },
+  {
+    "id": 116,
+    "topic": "Transport Layer",
+    "question": "Which field in a TCP header is used to identify the sending application?",
+    "options": ["Port", "ACK", "TTL", "Window"],
+    "answer": "Port"
+  },
+  {
+    "id": 117,
+    "topic": "Transport Layer",
+    "question": "Which field in a TCP header is used to identify the sending application?",
+    "options": ["Port", "ACK", "TTL", "Window"],
+    "answer": "Port"
+  },
+  {
+    "id": 118,
+    "topic": "Operating Systems",
+    "question": "Which system call is used to create a new process?",
+    "options": ["exec", "fork", "read", "write"],
+    "answer": "fork"
+  },
+  {
+    "id": 119,
+    "topic": "Operating Systems",
+    "question": "Which scheduler decides which process gets the CPU next?",
+    "options": ["Short-term", "Long-term", "Disk", "I/O"],
+    "answer": "Short-term"
+  },
+  {
+    "id": 120,
+    "topic": "Operating Systems",
+    "question": "Which scheduler decides which process gets the CPU next?",
+    "options": ["Short-term", "Long-term", "Disk", "I/O"],
+    "answer": "Short-term"
+  },
+  {
+    "id": 121,
+    "topic": "Operating Systems",
+    "question": "Which system call is used to create a new process?",
+    "options": ["exec", "fork", "read", "write"],
+    "answer": "fork"
+  },
+  {
+    "id": 122,
+    "topic": "Operating Systems",
+    "question": "Which scheduler decides which process gets the CPU next?",
+    "options": ["Short-term", "Long-term", "Disk", "I/O"],
+    "answer": "Short-term"
+  },
+  {
+    "id": 123,
+    "topic": "Operating Systems",
+    "question": "Which scheduler decides which process gets the CPU next?",
+    "options": ["Short-term", "Long-term", "Disk", "I/O"],
+    "answer": "Short-term"
+  },
+  {
+    "id": 124,
+    "topic": "Operating Systems",
+    "question": "Which system call is used to create a new process?",
+    "options": ["exec", "fork", "read", "write"],
+    "answer": "fork"
+  },
+  {
+    "id": 125,
+    "topic": "Operating Systems",
+    "question": "Which system call is used to create a new process?",
+    "options": ["exec", "fork", "read", "write"],
+    "answer": "fork"
+  },
+  {
+    "id": 126,
+    "topic": "Operating Systems",
+    "question": "Which scheduler decides which process gets the CPU next?",
+    "options": ["Short-term", "Long-term", "Disk", "I/O"],
+    "answer": "Short-term"
+  },
+  {
+    "id": 127,
+    "topic": "Threads & Concurrency",
+    "question": "Which thread method causes one thread to wait for another?",
+    "options": ["join()", "start()", "run()", "wait()"],
+    "answer": "join()"
+  },
+  {
+    "id": 128,
+    "topic": "Threads & Concurrency",
+    "question": "Which is a benefit of multithreading?",
+    "options": [
+      "Slower performance",
+      "Increased latency",
+      "Better resource use",
+      "Higher cost"
+    ],
+    "answer": "Better resource use"
+  },
+  {
+    "id": 129,
+    "topic": "Threads & Concurrency",
+    "question": "Which thread method causes one thread to wait for another?",
+    "options": ["join()", "start()", "run()", "wait()"],
+    "answer": "join()"
+  },
+  {
+    "id": 130,
+    "topic": "Threads & Concurrency",
+    "question": "Which is a benefit of multithreading?",
+    "options": [
+      "Slower performance",
+      "Increased latency",
+      "Better resource use",
+      "Higher cost"
+    ],
+    "answer": "Better resource use"
+  },
+  {
+    "id": 131,
+    "topic": "Threads & Concurrency",
+    "question": "Which thread method causes one thread to wait for another?",
+    "options": ["join()", "start()", "run()", "wait()"],
+    "answer": "join()"
+  },
+  {
+    "id": 132,
+    "topic": "Threads & Concurrency",
+    "question": "Which is a benefit of multithreading?",
+    "options": [
+      "Slower performance",
+      "Increased latency",
+      "Better resource use",
+      "Higher cost"
+    ],
+    "answer": "Better resource use"
+  },
+  {
+    "id": 133,
+    "topic": "Threads & Concurrency",
+    "question": "Which is a benefit of multithreading?",
+    "options": [
+      "Slower performance",
+      "Increased latency",
+      "Better resource use",
+      "Higher cost"
+    ],
+    "answer": "Better resource use"
+  },
+  {
+    "id": 134,
+    "topic": "Threads & Concurrency",
+    "question": "Which thread method causes one thread to wait for another?",
+    "options": ["join()", "start()", "run()", "wait()"],
+    "answer": "join()"
+  },
+  {
+    "id": 135,
+    "topic": "Threads & Concurrency",
+    "question": "Which thread method causes one thread to wait for another?",
+    "options": ["join()", "start()", "run()", "wait()"],
+    "answer": "join()"
+  },
+  {
+    "id": 136,
+    "topic": "Security",
+    "question": "Which type of attack floods a server with traffic?",
+    "options": ["MITM", "DoS", "Spoofing", "Phishing"],
+    "answer": "DoS"
+  },
+  {
+    "id": 137,
+    "topic": "Security",
+    "question": "What is used to transform plaintext into unreadable form?",
+    "options": ["Key", "Hash", "Cipher", "Nonce"],
+    "answer": "Cipher"
+  },
+  {
+    "id": 138,
+    "topic": "Security",
+    "question": "Which type of attack floods a server with traffic?",
+    "options": ["MITM", "DoS", "Spoofing", "Phishing"],
+    "answer": "DoS"
+  },
+  {
+    "id": 139,
+    "topic": "Security",
+    "question": "What is used to transform plaintext into unreadable form?",
+    "options": ["Key", "Hash", "Cipher", "Nonce"],
+    "answer": "Cipher"
+  },
+  {
+    "id": 140,
+    "topic": "Security",
+    "question": "Which type of attack floods a server with traffic?",
+    "options": ["MITM", "DoS", "Spoofing", "Phishing"],
+    "answer": "DoS"
+  },
+  {
+    "id": 141,
+    "topic": "Security",
+    "question": "Which type of attack floods a server with traffic?",
+    "options": ["MITM", "DoS", "Spoofing", "Phishing"],
+    "answer": "DoS"
+  },
+  {
+    "id": 142,
+    "topic": "Security",
+    "question": "Which type of attack floods a server with traffic?",
+    "options": ["MITM", "DoS", "Spoofing", "Phishing"],
+    "answer": "DoS"
+  },
+  {
+    "id": 143,
+    "topic": "Security",
+    "question": "What is used to transform plaintext into unreadable form?",
+    "options": ["Key", "Hash", "Cipher", "Nonce"],
+    "answer": "Cipher"
+  },
+  {
+    "id": 144,
+    "topic": "Security",
+    "question": "What is used to transform plaintext into unreadable form?",
+    "options": ["Key", "Hash", "Cipher", "Nonce"],
+    "answer": "Cipher"
+  },
+  {
+    "id": 145,
+    "topic": "Synchronization",
+    "question": "Which condition is necessary for deadlock?",
+    "options": [
+      "Mutual Exclusion",
+      "Round Robin",
+      "Short-term Scheduling",
+      "Preemption"
+    ],
+    "answer": "Mutual Exclusion"
+  },
+  {
+    "id": 146,
+    "topic": "Synchronization",
+    "question": "Which is not a valid synchronization technique?",
+    "options": ["Mutex", "Semaphore", "Barrier", "Pipeline"],
+    "answer": "Pipeline"
+  },
+  {
+    "id": 147,
+    "topic": "Synchronization",
+    "question": "Which condition is necessary for deadlock?",
+    "options": [
+      "Mutual Exclusion",
+      "Round Robin",
+      "Short-term Scheduling",
+      "Preemption"
+    ],
+    "answer": "Mutual Exclusion"
+  },
+  {
+    "id": 148,
+    "topic": "Synchronization",
+    "question": "Which condition is necessary for deadlock?",
+    "options": [
+      "Mutual Exclusion",
+      "Round Robin",
+      "Short-term Scheduling",
+      "Preemption"
+    ],
+    "answer": "Mutual Exclusion"
+  },
+  {
+    "id": 149,
+    "topic": "Synchronization",
+    "question": "Which condition is necessary for deadlock?",
+    "options": [
+      "Mutual Exclusion",
+      "Round Robin",
+      "Short-term Scheduling",
+      "Preemption"
+    ],
+    "answer": "Mutual Exclusion"
+  },
+  {
+    "id": 150,
+    "topic": "Synchronization",
+    "question": "Which condition is necessary for deadlock?",
+    "options": [
+      "Mutual Exclusion",
+      "Round Robin",
+      "Short-term Scheduling",
+      "Preemption"
+    ],
+    "answer": "Mutual Exclusion"
+  },
+  {
+    "id": 151,
+    "topic": "Synchronization",
+    "question": "Which is not a valid synchronization technique?",
+    "options": ["Mutex", "Semaphore", "Barrier", "Pipeline"],
+    "answer": "Pipeline"
+  },
+  {
+    "id": 152,
+    "topic": "Synchronization",
+    "question": "Which is not a valid synchronization technique?",
+    "options": ["Mutex", "Semaphore", "Barrier", "Pipeline"],
+    "answer": "Pipeline"
+  },
+  {
+    "id": 153,
+    "topic": "Synchronization",
+    "question": "Which is not a valid synchronization technique?",
+    "options": ["Mutex", "Semaphore", "Barrier", "Pipeline"],
+    "answer": "Pipeline"
   }
 ]

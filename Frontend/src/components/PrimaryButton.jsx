@@ -1,33 +1,30 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-export default function PrimaryButton({ onClick, children, disabled }) {
+const PrimaryButton = ({ children, onClick, disabled = false, style = {} }) => {
+  const baseStyle = {
+    padding: "0.75rem 1.5rem",
+    background: disabled ? "#555" : "linear-gradient(135deg, #43e97b, #38f9d7)",
+    color: disabled ? "#888" : "#000",
+    border: "none",
+    borderRadius: "999px",
+    fontSize: "1rem",
+    cursor: disabled ? "not-allowed" : "pointer",
+    transition: "transform 0.2s, box-shadow 0.2s",
+    ...style,
+  };
+
   return (
-    <button
+    <motion.button
       onClick={onClick}
       disabled={disabled}
-      style={{
-        padding: "10px 20px",
-        background: disabled
-          ? "#555" // muted gray when disabled
-          : "linear-gradient(135deg, #00ffcc, #009999)",
-        color: disabled ? "#888" : "#000",
-        border: "none",
-        borderRadius: "5px",
-        cursor: disabled ? "not-allowed" : "pointer",
-        fontSize: "1rem",
-        fontWeight: "bold",
-        marginTop: "1rem",
-        transition: "box-shadow 0.3s ease",
-      }}
-      onMouseEnter={(e) => {
-        if (!disabled)
-          e.currentTarget.style.boxShadow = "0 0 12px rgba(0,255,204,0.6)";
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.boxShadow = "none";
-      }}
+      whileHover={disabled ? {} : { scale: 1.05 }}
+      whileTap={disabled ? {} : { scale: 0.95 }}
+      style={baseStyle}
     >
       {children}
-    </button>
+    </motion.button>
   );
-}
+};
+
+export default PrimaryButton;

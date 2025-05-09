@@ -1,59 +1,89 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { QUIZ_TYPES } from "../constants/quiz";
+import colors from "../config/colors";
 
-export default function QuestionCard({
+const styles = {
+  container: {
+    padding: "2rem",
+    background: "rgba(255, 255, 255, 0.95)",
+    borderRadius: "1rem",
+    marginBottom: "1.5rem",
+    boxShadow: "0 4px 20px rgba(99, 102, 241, 0.1)",
+    backdropFilter: "blur(10px)",
+    border: "1px solid rgba(99, 102, 241, 0.2)",
+  },
+  question: {
+    color: colors.text.primary,
+    fontSize: "1.25rem",
+    marginBottom: "2rem",
+    fontWeight: "600",
+    lineHeight: "1.6",
+  },
+  optionsContainer: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.75rem",
+  },
+  option: {
+    padding: "1rem 1.5rem",
+    borderRadius: "0.75rem",
+    cursor: "pointer",
+    border: `1px solid rgba(99, 102, 241, 0.2)`,
+    background: "rgba(255, 255, 255, 0.9)",
+    color: colors.text.primary,
+    fontSize: "1rem",
+    fontWeight: "500",
+    transition: "all 0.2s ease",
+    userSelect: "none",
+    position: "relative",
+    overflow: "hidden",
+  },
+  selectedOption: {
+    background: colors.primary.gradient,
+    color: "#ffffff",
+    border: "none",
+    boxShadow: "0 4px 12px rgba(99, 102, 241, 0.3)",
+  },
+  hoverOption: {
+    border: `1px solid ${colors.primary.main}`,
+    background: "rgba(99, 102, 241, 0.1)",
+  },
+};
+
+const QuestionCard = ({
   question,
   index,
   selectedOption,
   onOptionClick,
-}) {
-  return (
-    <motion.div
-      key={question.id}
-      initial={{ opacity: 0, x: 30 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -30 }}
-      transition={{ duration: 0.3 }}
-      style={{
-        background: "#1e213a",
-        padding: "1.5rem",
-        borderRadius: "12px",
-        marginBottom: "1rem",
-      }}
-    >
-      <h3 style={{ color: "#e0e1f5", marginBottom: "1rem" }}>
-        {index + 1}. {question.question}
-      </h3>
-      {question.options.map((option) => {
-        const isSelected = selectedOption === option;
-        return (
-          <motion.button
-            key={option}
-            onClick={() => onOptionClick(option)}
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-            style={{
-              display: "block",
-              width: "100%",
-              padding: "0.75rem 1rem",
-              margin: "0.5rem 0",
-              background: isSelected
-                ? "linear-gradient(135deg, #00ffcc, #009999)"
-                : "#2a2d42",
-              color: isSelected ? "#000" : "#e0e1f5",
-              border: isSelected ? "none" : "1px solid rgba(255,255,255,0.1)",
-              borderRadius: "8px",
-              cursor: "pointer",
-              fontSize: "1rem",
-              fontWeight: 500,
-              transition: "background 0.2s, color 0.2s, box-shadow 0.2s",
-              boxShadow: isSelected ? "0 0 12px rgba(0,255,204,0.6)" : "none",
-            }}
-          >
-            {option}
-          </motion.button>
-        );
-      })}
-    </motion.div>
-  );
-}
+  type = QUIZ_TYPES.MCQ,
+}) => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.4 }}
+    style={styles.container}
+  >
+    <h3 style={styles.question}>
+      {index + 1}. {question.question}
+    </h3>
+    <div style={styles.optionsContainer}>
+      {question.options.map((option, i) => (
+        <motion.div
+          key={i}
+          whileHover={selectedOption !== option ? { scale: 1.02, y: -2 } : {}}
+          whileTap={{ scale: 0.98 }}
+          onClick={() => onOptionClick(option)}
+          style={{
+            ...styles.option,
+            ...(selectedOption === option && styles.selectedOption),
+          }}
+        >
+          {option}
+        </motion.div>
+      ))}
+    </div>
+  </motion.div>
+);
+
+export default QuestionCard;

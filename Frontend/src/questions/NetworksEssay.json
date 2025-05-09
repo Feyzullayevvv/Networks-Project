@@ -63,10 +63,7 @@
     "id": 16,
     "question": "Discuss the use of acknowledgments and sequence numbers in TCP segment structures."
   },
-  {
-    "id": 17,
-    "question": "What is the role of RFCs in Internet standards? Describe how they are published and used."
-  },
+
   {
     "id": 18,
     "question": "Discuss peer-to-peer (P2P) networking. How does it differ from the client-server model?"
