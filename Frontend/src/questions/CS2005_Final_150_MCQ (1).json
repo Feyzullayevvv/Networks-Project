@@ -3,14 +3,24 @@
     "id": 1,
     "topic": "Application Layer",
     "question": "Which protocol is primarily used for retrieving web pages from a server?",
-    "options": ["SMTP", "FTP", "DNS", "HTTP"],
+    "options": [
+      "SMTP",
+      "FTP",
+      "DNS",
+      "HTTP"
+    ],
     "answer": "HTTP"
   },
   {
     "id": 2,
     "topic": "Network Layer",
     "question": "Which protocol is responsible for logical addressing and routing of packets?",
-    "options": ["IP", "Ethernet", "TCP", "UDP"],
+    "options": [
+      "IP",
+      "Ethernet",
+      "TCP",
+      "UDP"
+    ],
     "answer": "IP"
   },
   {
@@ -29,7 +39,12 @@
     "id": 4,
     "topic": "Transport Layer",
     "question": "Which protocol ensures reliable, ordered, and error-checked delivery of data?",
-    "options": ["IP", "ICMP", "UDP", "TCP"],
+    "options": [
+      "IP",
+      "ICMP",
+      "UDP",
+      "TCP"
+    ],
     "answer": "TCP"
   },
   {
@@ -60,7 +75,12 @@
     "id": 7,
     "topic": "Security",
     "question": "What does encryption ensure in network communication?",
-    "options": ["Confidentiality", "Speed", "Availability", "Integrity"],
+    "options": [
+      "Confidentiality",
+      "Speed",
+      "Availability",
+      "Integrity"
+    ],
     "answer": "Confidentiality"
   },
   {
@@ -78,7 +98,7 @@
   {
     "id": 9,
     "topic": "Application Layer",
-    "question": "What is the purpose of the dns protocol?",
+    "question": "What is the purpose of the DNS protocol?",
     "options": [
       "File transfer",
       "Resolving domain names to IPs",
@@ -91,13 +111,18 @@
     "id": 10,
     "topic": "Network Layer",
     "question": "Which of the following devices operates at the network layer?",
-    "options": ["Repeater", "Switch", "Hub", "Router"],
+    "options": [
+      "Repeater",
+      "Switch",
+      "Hub",
+      "Router"
+    ],
     "answer": "Router"
   },
   {
     "id": 11,
     "topic": "Transport Layer",
-    "question": "Which of the following is a characteristic of udp?",
+    "question": "Which of the following is a characteristic of UDP?",
     "options": [
       "Guaranteed delivery",
       "Reliable",
@@ -109,8 +134,13 @@
   {
     "id": 12,
     "topic": "Operating Systems",
-    "question": "Which component is responsible for managing hardware resources in an os?",
-    "options": ["Compiler", "Kernel", "Scheduler", "Shell"],
+    "question": "Which component is responsible for managing hardware resources in an OS?",
+    "options": [
+      "Compiler",
+      "Kernel",
+      "Scheduler",
+      "Shell"
+    ],
     "answer": "Kernel"
   },
   {
@@ -140,21 +170,31 @@
   {
     "id": 15,
     "topic": "Synchronization",
-    "question": "Which keyword is used in java to prevent concurrent access to a method?",
-    "options": ["synchronized", "final", "volatile", "private"],
+    "question": "Which keyword is used in Java to prevent concurrent access to a method?",
+    "options": [
+      "synchronized",
+      "final",
+      "volatile",
+      "private"
+    ],
     "answer": "synchronized"
   },
   {
     "id": 16,
     "topic": "Application Layer",
     "question": "Which protocol is used for sending emails?",
-    "options": ["DHCP", "SMTP", "HTTP", "FTP"],
+    "options": [
+      "DHCP",
+      "SMTP",
+      "HTTP",
+      "FTP"
+    ],
     "answer": "SMTP"
   },
   {
     "id": 17,
     "topic": "Network Layer",
-    "question": "What does ttl in an ip packet stand for?",
+    "question": "What does TTL in an IP packet stand for?",
     "options": [
       "Total Time Length",
       "Transmission To Layer",
@@ -178,7 +218,7 @@
   {
     "id": 19,
     "topic": "Operating Systems",
-    "question": "What type of os allows multiple users to use the system at the same time?",
+    "question": "What type of OS allows multiple users to use the system at the same time?",
     "options": [
       "Real-time OS",
       "Single-tasking OS",
@@ -203,20 +243,30 @@
     "id": 21,
     "topic": "Security",
     "question": "Which term describes the process of confirming a user's identity?",
-    "options": ["Authentication", "Authorization", "Encryption", "Validation"],
+    "options": [
+      "Authentication",
+      "Authorization",
+      "Encryption",
+      "Validation"
+    ],
     "answer": "Authentication"
   },
   {
     "id": 22,
     "topic": "Synchronization",
     "question": "What mechanism prevents multiple threads from accessing a shared resource simultaneously?",
-    "options": ["Deadlock", "Parallelism", "Scheduler", "Mutex"],
+    "options": [
+      "Deadlock",
+      "Parallelism",
+      "Scheduler",
+      "Mutex"
+    ],
     "answer": "Mutex"
   },
   {
     "id": 23,
     "topic": "Application Layer",
-    "question": "What does the ftp protocol primarily handle?",
+    "question": "What does the FTP protocol primarily handle?",
     "options": [
       "Email communication",
       "File transfers",
@@ -229,7 +279,12 @@
     "id": 24,
     "topic": "Network Layer",
     "question": "What information is used by routers to forward data packets?",
-    "options": ["IP address", "Port number", "MAC address", "Protocol version"],
+    "options": [
+      "IP address",
+      "Port number",
+      "MAC address",
+      "Protocol version"
+    ],
     "answer": "IP address"
   },
   {
@@ -247,7 +302,7 @@
   {
     "id": 26,
     "topic": "Transport Layer",
-    "question": "What is the main purpose of the tcp three-way handshake?",
+    "question": "What is the main purpose of the TCP three-way handshake?",
     "options": [
       "To release a connection",
       "To establish a reliable connection",
@@ -284,7 +339,12 @@
     "id": 29,
     "topic": "Security",
     "question": "Which of the following is a symmetric encryption algorithm?",
-    "options": ["RSA", "ECC", "DSA", "AES"],
+    "options": [
+      "RSA",
+      "ECC",
+      "DSA",
+      "AES"
+    ],
     "answer": "AES"
   },
   {
@@ -302,7 +362,7 @@
   {
     "id": 31,
     "topic": "Application Layer",
-    "question": "In the context of http/1.1, what is the purpose of the 'keep-alive' header?",
+    "question": "In the context of HTTP/1.1, what is the purpose of the 'Keep-Alive' header?",
     "options": [
       "To authenticate the user",
       "To maintain a persistent connection",
@@ -326,7 +386,7 @@
   {
     "id": 33,
     "topic": "Distributed Systems",
-    "question": "What issue does the cap theorem address in distributed systems?",
+    "question": "What issue does the CAP theorem address in distributed systems?",
     "options": [
       "CPU utilization, memory usage, and disk space",
       "Control, accuracy, and persistence",
@@ -338,7 +398,7 @@
   {
     "id": 34,
     "topic": "Transport Layer",
-    "question": "In tcp, what is the main role of the sliding window mechanism?",
+    "question": "In TCP, what is the main role of the sliding window mechanism?",
     "options": [
       "To ensure packets arrive in order",
       "To increase the transmission speed of small packets",
@@ -398,7 +458,7 @@
   {
     "id": 39,
     "topic": "Application Layer",
-    "question": "Which of the following statements about http cookies is true?",
+    "question": "Which of the following statements about HTTP cookies is true?",
     "options": [
       "Cookies are stored only on the server side",
       "Cookies are encrypted by default",
@@ -408,16 +468,21 @@
     "answer": "Cookies are used to maintain session state in stateless HTTP"
   },
   {
-    "id": 40,
+    "id": 41,
     "topic": "Application Layer",
-    "question": "(?)which application layer protocol translates domain names into ip addresses?",
-    "options": ["FTP", "SMTP", "DNS", "DHCP"],
+    "question": "(?)Which application layer protocol translates domain names into IP addresses?",
+    "options": [
+      "FTP",
+      "SMTP",
+      "DNS",
+      "DHCP"
+    ],
     "answer": "DNS"
   },
   {
-    "id": 41,
+    "id": 42,
     "topic": "Network Layer",
-    "question": "What is the main difference between ipv4 and ipv6?",
+    "question": "What is the main difference between IPv4 and IPv6?",
     "options": [
       "IPv6 cannot route packets",
       "IPv4 is used for mobile devices, IPv6 is not",
@@ -427,9 +492,9 @@
     "answer": "IPv6 uses 128-bit addresses, IPv4 uses 32-bit"
   },
   {
-    "id": 42,
+    "id": 43,
     "topic": "Distributed Systems",
-    "question": "What is one advantage of a peer-to-peer (p2p) network?",
+    "question": "What is one advantage of a peer-to-peer (P2P) network?",
     "options": [
       "Centralized control",
       "High dependency on servers",
@@ -439,21 +504,31 @@
     "answer": "Scalability and resource sharing"
   },
   {
-    "id": 43,
+    "id": 44,
     "topic": "Transport Layer",
-    "question": "Which tcp flag is used to initiate a connection?",
-    "options": ["SYN", "RST", "FIN", "ACK"],
+    "question": "Which TCP flag is used to initiate a connection?",
+    "options": [
+      "SYN",
+      "RST",
+      "FIN",
+      "ACK"
+    ],
     "answer": "SYN"
   },
   {
-    "id": 44,
+    "id": 45,
     "topic": "Operating Systems",
     "question": "Which memory management technique divides memory into fixed-size blocks?",
-    "options": ["Swapping", "Thrashing", "Paging", "Segmentation"],
+    "options": [
+      "Swapping",
+      "Thrashing",
+      "Paging",
+      "Segmentation"
+    ],
     "answer": "Paging"
   },
   {
-    "id": 45,
+    "id": 46,
     "topic": "Threads & Concurrency",
     "question": "Which of the following best describes a daemon thread?",
     "options": [
@@ -465,23 +540,33 @@
     "answer": "A thread that runs in the background to perform tasks"
   },
   {
-    "id": 46,
+    "id": 47,
     "topic": "Security",
     "question": "Which security feature prevents unauthorized access to a network?",
-    "options": ["Encryption", "Caching", "Threading", "Firewall"],
+    "options": [
+      "Encryption",
+      "Caching",
+      "Threading",
+      "Firewall"
+    ],
     "answer": "Firewall"
   },
   {
-    "id": 47,
+    "id": 48,
     "topic": "Synchronization",
     "question": "Which of the following is used to protect critical sections in a multithreaded application?",
-    "options": ["Semaphore", "Pointer", "Array", "Interface"],
+    "options": [
+      "Semaphore",
+      "Pointer",
+      "Array",
+      "Interface"
+    ],
     "answer": "Semaphore"
   },
   {
-    "id": 48,
+    "id": 49,
     "topic": "Application Layer",
-    "question": "What is the role of the smtp protocol?",
+    "question": "What is the role of the SMTP protocol?",
     "options": [
       "Sending emails",
       "Streaming media",
@@ -491,9 +576,9 @@
     "answer": "Sending emails"
   },
   {
-    "id": 49,
+    "id": 51,
     "topic": "Distributed Systems",
-    "question": "What does rpc stand for in distributed systems?",
+    "question": "What does RPC stand for in distributed systems?",
     "options": [
       "Remote Procedure Call",
       "Resource Protocol Connection",
@@ -503,9 +588,9 @@
     "answer": "Remote Procedure Call"
   },
   {
-    "id": 50,
+    "id": 52,
     "topic": "Transport Layer",
-    "question": "What is the purpose of the ack flag in a tcp segment?",
+    "question": "What is the purpose of the ACK flag in a TCP segment?",
     "options": [
       "To synchronize clocks",
       "To initiate a session",
@@ -515,9 +600,9 @@
     "answer": "To acknowledge receipt of data"
   },
   {
-    "id": 51,
+    "id": 53,
     "topic": "Operating Systems",
-    "question": "Which of the following best defines 'thrashing' in an os context?",
+    "question": "Which of the following best defines 'thrashing' in an OS context?",
     "options": [
       "Excessive paging causing performance degradation",
       "Frequent switching between processes",
@@ -527,21 +612,31 @@
     "answer": "Excessive paging causing performance degradation"
   },
   {
-    "id": 52,
+    "id": 54,
     "topic": "Threads & Concurrency",
     "question": "What does a thread share with other threads in the same process?",
-    "options": ["Register values", "Memory space", "Program counter", "Stack"],
+    "options": [
+      "Register values",
+      "Memory space",
+      "Program counter",
+      "Stack"
+    ],
     "answer": "Memory space"
   },
   {
-    "id": 53,
+    "id": 55,
     "topic": "Security",
     "question": "Which term describes a technique that disguises data to appear as something else?",
-    "options": ["Tunneling", "Steganography", "Spoofing", "Obfuscation"],
+    "options": [
+      "Tunneling",
+      "Steganography",
+      "Spoofing",
+      "Obfuscation"
+    ],
     "answer": "Steganography"
   },
   {
-    "id": 54,
+    "id": 56,
     "topic": "Synchronization",
     "question": "Which scenario best describes a deadlock?",
     "options": [
@@ -553,21 +648,31 @@
     "answer": "Two threads waiting on each other to release resources"
   },
   {
-    "id": 55,
+    "id": 57,
     "topic": "Application Layer",
     "question": "Which application layer protocol is typically used for secure web transactions?",
-    "options": ["SMTP", "FTP", "HTTP", "HTTPS"],
+    "options": [
+      "SMTP",
+      "FTP",
+      "HTTP",
+      "HTTPS"
+    ],
     "answer": "HTTPS"
   },
   {
-    "id": 56,
+    "id": 58,
     "topic": "Network Layer",
-    "question": "Which protocol is used to dynamically assign ip addresses to devices?",
-    "options": ["ARP", "DNS", "DHCP", "ICMP"],
+    "question": "Which protocol is used to dynamically assign IP addresses to devices?",
+    "options": [
+      "ARP",
+      "DNS",
+      "DHCP",
+      "ICMP"
+    ],
     "answer": "DHCP"
   },
   {
-    "id": 57,
+    "id": 59,
     "topic": "Distributed Systems",
     "question": "Which characteristic is common in distributed systems?",
     "options": [
@@ -579,9 +684,9 @@
     "answer": "Transparency to users"
   },
   {
-    "id": 58,
+    "id": 60,
     "topic": "Transport Layer",
-    "question": "Which of the following is used by tcp to ensure ordered delivery of data?",
+    "question": "Which of the following is used by TCP to ensure ordered delivery of data?",
     "options": [
       "Checksums",
       "Acknowledgments",
@@ -591,35 +696,55 @@
     "answer": "Sequence numbers"
   },
   {
-    "id": 59,
+    "id": 61,
     "topic": "Application Layer",
-    "question": "What is the default port number for http?",
-    "options": ["21", "443", "80", "25"],
+    "question": "What is the default port number for HTTP?",
+    "options": [
+      "21",
+      "443",
+      "80",
+      "25"
+    ],
     "answer": "80"
   },
   {
-    "id": 60,
+    "id": 62,
     "topic": "Network Layer",
     "question": "Which device uses routing tables to determine the best path for data packets?",
-    "options": ["Repeater", "Hub", "Switch", "Router"],
+    "options": [
+      "Repeater",
+      "Hub",
+      "Switch",
+      "Router"
+    ],
     "answer": "Router"
   },
   {
-    "id": 61,
+    "id": 63,
     "topic": "Distributed Systems",
-    "question": "(?)which type of clock synchronization method uses message exchanges between systems?",
-    "options": ["GPS", "Atomic clock", "Christian's algorithm", "RTC sync"],
+    "question": "(?)Which type of clock synchronization method uses message exchanges between systems?",
+    "options": [
+      "GPS",
+      "Atomic clock",
+      "Christian's algorithm",
+      "RTC sync"
+    ],
     "answer": "Christian's algorithm"
   },
   {
-    "id": 62,
+    "id": 64,
     "topic": "Transport Layer",
-    "question": "Which tcp feature helps in adjusting the flow of data based on network conditions?",
-    "options": ["Checksum", "Header length", "Window size", "TTL"],
+    "question": "Which TCP feature helps in adjusting the flow of data based on network conditions?",
+    "options": [
+      "Checksum",
+      "Header length",
+      "Window size",
+      "TTL"
+    ],
     "answer": "Window size"
   },
   {
-    "id": 63,
+    "id": 65,
     "topic": "Operating Systems",
     "question": "Which type of scheduler selects which process should be brought into the ready queue?",
     "options": [
@@ -631,7 +756,7 @@
     "answer": "Long-term scheduler"
   },
   {
-    "id": 64,
+    "id": 66,
     "topic": "Threads & Concurrency",
     "question": "What is context switching?",
     "options": [
@@ -643,14 +768,19 @@
     "answer": "Saving and restoring thread states for multitasking"
   },
   {
-    "id": 65,
+    "id": 67,
     "topic": "Security",
     "question": "Which of the following is an attack where communication is secretly intercepted?",
-    "options": ["Brute force", "Man-in-the-middle", "DoS", "Phishing"],
+    "options": [
+      "Brute force",
+      "Man-in-the-middle",
+      "DoS",
+      "Phishing"
+    ],
     "answer": "Man-in-the-middle"
   },
   {
-    "id": 66,
+    "id": 68,
     "topic": "Synchronization",
     "question": "What is a barrier in concurrent programming?",
     "options": [
@@ -662,7 +792,7 @@
     "answer": "A synchronization method that blocks until all threads reach it"
   },
   {
-    "id": 67,
+    "id": 70,
     "topic": "Network Layer",
     "question": "What is the purpose of a routing algorithm in the network layer?",
     "options": [
@@ -674,16 +804,21 @@
     "answer": "Determine the shortest path to a destination"
   },
   {
-    "id": 68,
+    "id": 71,
     "topic": "Application Layer",
     "question": "Which of the following protocols is commonly used for retrieving emails from a server?",
-    "options": ["SMTP", "POP3", "FTP", "HTTP"],
+    "options": [
+      "SMTP",
+      "POP3",
+      "FTP",
+      "HTTP"
+    ],
     "answer": "POP3"
   },
   {
-    "id": 69,
+    "id": 72,
     "topic": "Network Layer",
-    "question": "What is the primary benefit of using hierarchical ip addressing?",
+    "question": "What is the primary benefit of using hierarchical IP addressing?",
     "options": [
       "Simplified routing and network management",
       "Faster encryption",
@@ -693,16 +828,21 @@
     "answer": "Simplified routing and network management"
   },
   {
-    "id": 70,
+    "id": 73,
     "topic": "Distributed Systems",
     "question": "Which protocol enables time synchronization across distributed systems?",
-    "options": ["DNS", "ARP", "NTP", "SMTP"],
+    "options": [
+      "DNS",
+      "ARP",
+      "NTP",
+      "SMTP"
+    ],
     "answer": "NTP"
   },
   {
-    "id": 71,
+    "id": 74,
     "topic": "Transport Layer",
-    "question": "What is the purpose of flow control in tcp?",
+    "question": "What is the purpose of flow control in TCP?",
     "options": [
       "To ensure the receiver is not overwhelmed with data",
       "To select optimal routing paths",
@@ -712,9 +852,9 @@
     "answer": "To ensure the receiver is not overwhelmed with data"
   },
   {
-    "id": 72,
+    "id": 75,
     "topic": "Operating Systems",
-    "question": "What does the 'exec()' system call do in unix-based operating systems?",
+    "question": "What does the 'exec()' system call do in Unix-based operating systems?",
     "options": [
       "Starts a new thread",
       "Replaces the current process image with a new one",
@@ -724,7 +864,7 @@
     "answer": "Replaces the current process image with a new one"
   },
   {
-    "id": 73,
+    "id": 76,
     "topic": "Threads & Concurrency",
     "question": "Which situation can lead to thread starvation?",
     "options": [
@@ -736,7 +876,7 @@
     "answer": "A low-priority thread never gets CPU time due to higher-priority threads"
   },
   {
-    "id": 74,
+    "id": 77,
     "topic": "Security",
     "question": "Which technique ensures a user cannot deny sending a message?",
     "options": [
@@ -748,7 +888,7 @@
     "answer": "Non-repudiation"
   },
   {
-    "id": 75,
+    "id": 78,
     "topic": "Synchronization",
     "question": "Which type of semaphore only allows one thread to access a resource at a time?",
     "options": [
@@ -760,7 +900,7 @@
     "answer": "Binary semaphore"
   },
   {
-    "id": 76,
+    "id": 79,
     "topic": "Application Layer",
     "question": "Which layer is responsible for providing services like file transfer and email?",
     "options": [
@@ -772,98 +912,163 @@
     "answer": "Application Layer"
   },
   {
-    "id": 77,
+    "id": 80,
     "topic": "Network Layer",
     "question": "Which device maintains and updates routing tables in a network?",
-    "options": ["Router", "Firewall", "Hub", "Switch"],
+    "options": [
+      "Router",
+      "Firewall",
+      "Hub",
+      "Switch"
+    ],
     "answer": "Router"
-  },
-  {
-    "id": 78,
-    "topic": "Application Layer",
-    "question": "Which protocol is used to retrieve emails from a server?",
-    "options": ["POP3", "SMTP", "DNS", "FTP"],
-    "answer": "POP3"
-  },
-  {
-    "id": 79,
-    "topic": "Application Layer",
-    "question": "Which of the following is a stateless protocol?",
-    "options": ["TCP", "FTP", "SMTP", "HTTP"],
-    "answer": "HTTP"
-  },
-  {
-    "id": 80,
-    "topic": "Application Layer",
-    "question": "Which protocol is responsible for transferring files over the internet?",
-    "options": ["HTTP", "FTP", "DNS", "SMTP"],
-    "answer": "FTP"
   },
   {
     "id": 81,
-    "topic": "Network Layer",
-    "question": "Which device works at the network layer?",
-    "options": ["Router", "Hub", "Switch", "Bridge"],
-    "answer": "Router"
+    "topic": "Application Layer",
+    "question": "Which protocol is used to retrieve emails from a server?",
+    "options": [
+      "POP3",
+      "SMTP",
+      "DNS",
+      "FTP"
+    ],
+    "answer": "POP3"
   },
   {
     "id": 82,
-    "topic": "Network Layer",
-    "question": "Which protocol is responsible for error messages in the network layer?",
-    "options": ["ICMP", "TCP", "FTP", "DHCP"],
-    "answer": "ICMP"
+    "topic": "Application Layer",
+    "question": "Which of the following is a stateless protocol?",
+    "options": [
+      "TCP",
+      "FTP",
+      "SMTP",
+      "HTTP"
+    ],
+    "answer": "HTTP"
   },
   {
     "id": 83,
+    "topic": "Application Layer",
+    "question": "Which protocol is responsible for transferring files over the internet?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "DNS",
+      "SMTP"
+    ],
+    "answer": "FTP"
+  },
+  {
+    "id": 91,
+    "topic": "Network Layer",
+    "question": "Which device works at the network layer?",
+    "options": [
+      "Router",
+      "Hub",
+      "Switch",
+      "Bridge"
+    ],
+    "answer": "Router"
+  },
+  {
+    "id": 92,
+    "topic": "Network Layer",
+    "question": "Which protocol is responsible for error messages in the network layer?",
+    "options": [
+      "ICMP",
+      "TCP",
+      "FTP",
+      "DHCP"
+    ],
+    "answer": "ICMP"
+  },
+  {
+    "id": 100,
     "topic": "Distributed Systems",
     "question": "In distributed systems, which concept ensures components can fail independently?",
-    "options": ["Coupling", "Fault Tolerance", "Latency", "Encapsulation"],
+    "options": [
+      "Coupling",
+      "Fault Tolerance",
+      "Latency",
+      "Encapsulation"
+    ],
     "answer": "Fault Tolerance"
   },
   {
-    "id": 84,
+    "id": 101,
     "topic": "Distributed Systems",
     "question": "Which component helps remote method invocation?",
-    "options": ["RPC", "UDP", "TCP", "DNS"],
+    "options": [
+      "RPC",
+      "UDP",
+      "TCP",
+      "DNS"
+    ],
     "answer": "RPC"
   },
   {
-    "id": 85,
+    "id": 109,
     "topic": "Transport Layer",
-    "question": "Udp is often used in which of the following?",
-    "options": ["Email", "Streaming", "File Transfer", "Login"],
+    "question": "UDP is often used in which of the following?",
+    "options": [
+      "Email",
+      "Streaming",
+      "File Transfer",
+      "Login"
+    ],
     "answer": "Streaming"
   },
   {
-    "id": 86,
+    "id": 110,
     "topic": "Transport Layer",
-    "question": "Which field in a tcp header is used to identify the sending application?",
-    "options": ["Port", "ACK", "TTL", "Window"],
+    "question": "Which field in a TCP header is used to identify the sending application?",
+    "options": [
+      "Port",
+      "ACK",
+      "TTL",
+      "Window"
+    ],
     "answer": "Port"
   },
   {
-    "id": 87,
+    "id": 118,
     "topic": "Operating Systems",
     "question": "Which system call is used to create a new process?",
-    "options": ["exec", "fork", "read", "write"],
+    "options": [
+      "exec",
+      "fork",
+      "read",
+      "write"
+    ],
     "answer": "fork"
   },
   {
-    "id": 88,
+    "id": 119,
     "topic": "Operating Systems",
-    "question": "Which scheduler decides which process gets the cpu next?",
-    "options": ["Short-term", "Long-term", "Disk", "I/O"],
+    "question": "Which scheduler decides which process gets the CPU next?",
+    "options": [
+      "Short-term",
+      "Long-term",
+      "Disk",
+      "I/O"
+    ],
     "answer": "Short-term"
   },
   {
-    "id": 89,
+    "id": 127,
     "topic": "Threads & Concurrency",
     "question": "Which thread method causes one thread to wait for another?",
-    "options": ["join()", "start()", "run()", "wait()"],
+    "options": [
+      "join()",
+      "start()",
+      "run()",
+      "wait()"
+    ],
     "answer": "join()"
   },
   {
-    "id": 90,
+    "id": 128,
     "topic": "Threads & Concurrency",
     "question": "Which is a benefit of multithreading?",
     "options": [
@@ -875,21 +1080,31 @@
     "answer": "Better resource use"
   },
   {
-    "id": 91,
+    "id": 136,
     "topic": "Security",
     "question": "Which type of attack floods a server with traffic?",
-    "options": ["MITM", "DoS", "Spoofing", "Phishing"],
+    "options": [
+      "MITM",
+      "DoS",
+      "Spoofing",
+      "Phishing"
+    ],
     "answer": "DoS"
   },
   {
-    "id": 92,
+    "id": 137,
     "topic": "Security",
     "question": "What is used to transform plaintext into unreadable form?",
-    "options": ["Key", "Hash", "Cipher", "Nonce"],
+    "options": [
+      "Key",
+      "Hash",
+      "Cipher",
+      "Nonce"
+    ],
     "answer": "Cipher"
   },
   {
-    "id": 93,
+    "id": 145,
     "topic": "Synchronization",
     "question": "Which condition is necessary for deadlock?",
     "options": [
@@ -901,22 +1116,32 @@
     "answer": "Mutual Exclusion"
   },
   {
-    "id": 94,
+    "id": 146,
     "topic": "Synchronization",
     "question": "Which is not a valid synchronization technique?",
-    "options": ["Mutex", "Semaphore", "Barrier", "Pipeline"],
+    "options": [
+      "Mutex",
+      "Semaphore",
+      "Barrier",
+      "Pipeline"
+    ],
     "answer": "Pipeline"
   },
   {
     "topic": "Application Layer",
     "question": "Which protocol is used to send messages between mail servers?",
-    "options": ["SMTP", "HTTP", "POP3", "DNS"],
+    "options": [
+      "SMTP",
+      "HTTP",
+      "POP3",
+      "DNS"
+    ],
     "answer": "SMTP",
-    "id": 95
+    "id": 154
   },
   {
     "topic": "Application Layer",
-    "question": "What does the 'host' header in an http request specify?",
+    "question": "What does the 'Host' header in an HTTP request specify?",
     "options": [
       "The server\u2019s IP",
       "The port number",
@@ -924,18 +1149,23 @@
       "The destination domain"
     ],
     "answer": "The destination domain",
-    "id": 96
+    "id": 155
   },
   {
     "topic": "Application Layer",
-    "question": "Which layer in the tcp/ip model is responsible for supporting user applications?",
-    "options": ["Network", "Application", "Data Link", "Transport"],
+    "question": "Which layer in the TCP/IP model is responsible for supporting user applications?",
+    "options": [
+      "Network",
+      "Application",
+      "Data Link",
+      "Transport"
+    ],
     "answer": "Application",
-    "id": 97
+    "id": 156
   },
   {
     "topic": "Transport Layer",
-    "question": "What information does a udp socket use for demultiplexing?",
+    "question": "What information does a UDP socket use for demultiplexing?",
     "options": [
       "Source IP and port",
       "MAC address",
@@ -943,11 +1173,11 @@
       "Protocol type"
     ],
     "answer": "Source IP and port",
-    "id": 98
+    "id": 157
   },
   {
     "topic": "Transport Layer",
-    "question": "In tcp, what does the syn flag indicate?",
+    "question": "In TCP, what does the SYN flag indicate?",
     "options": [
       "Data ready to send",
       "Session termination",
@@ -955,11 +1185,11 @@
       "Packet loss"
     ],
     "answer": "Request to establish a connection",
-    "id": 99
+    "id": 158
   },
   {
     "topic": "Transport Layer",
-    "question": "What is the main role of tcp flow control?",
+    "question": "What is the main role of TCP flow control?",
     "options": [
       "Minimize packet loss",
       "Limit receiver overload",
@@ -967,11 +1197,11 @@
       "Encrypt segments"
     ],
     "answer": "Limit receiver overload",
-    "id": 100
+    "id": 159
   },
   {
     "topic": "Network Layer",
-    "question": "What is the purpose of the ttl field in an ip packet?",
+    "question": "What is the purpose of the TTL field in an IP packet?",
     "options": [
       "Count bytes sent",
       "Avoid infinite loops",
@@ -979,7 +1209,7 @@
       "Identify protocol"
     ],
     "answer": "Avoid infinite loops",
-    "id": 101
+    "id": 160
   },
   {
     "topic": "Network Layer",
@@ -991,32 +1221,47 @@
       "Socket ID"
     ],
     "answer": "Destination IP",
-    "id": 102
+    "id": 161
   },
   {
     "topic": "Network Layer",
     "question": "Which protocol reports errors in the network layer?",
-    "options": ["IP", "TCP", "DHCP", "ICMP"],
+    "options": [
+      "IP",
+      "TCP",
+      "DHCP",
+      "ICMP"
+    ],
     "answer": "ICMP",
-    "id": 103
+    "id": 162
   },
   {
     "topic": "Operating Systems",
     "question": "Which system call replaces a process's memory space with a new program?",
-    "options": ["exec()", "fork()", "wait()", "read()"],
+    "options": [
+      "exec()",
+      "fork()",
+      "wait()",
+      "read()"
+    ],
     "answer": "exec()",
-    "id": 104
+    "id": 163
   },
   {
     "topic": "Operating Systems",
     "question": "Which type of scheduler determines which job enters the ready queue?",
-    "options": ["Short-term", "Medium-term", "Long-term", "Preemptive"],
+    "options": [
+      "Short-term",
+      "Medium-term",
+      "Long-term",
+      "Preemptive"
+    ],
     "answer": "Long-term",
-    "id": 105
+    "id": 164
   },
   {
     "topic": "Operating Systems",
-    "question": "What is the role of the shell in an os?",
+    "question": "What is the role of the shell in an OS?",
     "options": [
       "Manage memory",
       "Provide GUI",
@@ -1024,11 +1269,11 @@
       "Handle interrupts"
     ],
     "answer": "Interpret user commands",
-    "id": 106
+    "id": 165
   },
   {
     "topic": "Distributed Systems",
-    "question": "Which of the following is a common use of remote procedure calls (rpc)?",
+    "question": "Which of the following is a common use of Remote Procedure Calls (RPC)?",
     "options": [
       "Local file access",
       "Remote method invocation",
@@ -1036,14 +1281,19 @@
       "Socket opening"
     ],
     "answer": "Remote method invocation",
-    "id": 107
+    "id": 166
   },
   {
     "topic": "Distributed Systems",
     "question": "Which communication model involves a client and a server?",
-    "options": ["Broadcast", "Multicast", "Client-server", "P2P"],
+    "options": [
+      "Broadcast",
+      "Multicast",
+      "Client-server",
+      "P2P"
+    ],
     "answer": "Client-server",
-    "id": 108
+    "id": 167
   },
   {
     "topic": "Distributed Systems",
@@ -1055,6 +1305,498 @@
       "To encrypt data"
     ],
     "answer": "To send messages between processes",
-    "id": 109
+    "id": 168
+  },
+  {
+    "topic": "Distributed Systems",
+    "question": "Which of the following is a common use of Remote Procedure Calls (RPC)? (variant)",
+    "options": [
+      "Local file access",
+      "Remote method invocation",
+      "Thread creation",
+      "Socket opening"
+    ],
+    "answer": "Remote method invocation",
+    "id": 169
+  },
+  {
+    "topic": "Distributed Systems",
+    "question": "Which of the following is a common use of Remote Procedure Calls (RPC)? (variant)",
+    "options": [
+      "Local file access",
+      "Remote method invocation",
+      "Thread creation",
+      "Socket opening"
+    ],
+    "answer": "Remote method invocation",
+    "id": 170
+  },
+  {
+    "topic": "Application Layer",
+    "question": "Which protocol is used to send messages between mail servers? (variant)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "POP3",
+      "DNS"
+    ],
+    "answer": "SMTP",
+    "id": 171
+  },
+  {
+    "topic": "Network Layer",
+    "question": "Which protocol reports errors in the network layer? (variant)",
+    "options": [
+      "IP",
+      "TCP",
+      "DHCP",
+      "ICMP"
+    ],
+    "answer": "ICMP",
+    "id": 172
+  },
+  {
+    "topic": "Network Layer",
+    "question": "What is the purpose of the TTL field in an IP packet? (variant)",
+    "options": [
+      "Count bytes sent",
+      "Avoid infinite loops",
+      "Encrypt header",
+      "Identify protocol"
+    ],
+    "answer": "Avoid infinite loops",
+    "id": 173
+  },
+  {
+    "topic": "Application Layer",
+    "question": "What does the 'Host' header in an HTTP request specify? (variant)",
+    "options": [
+      "The server\u2019s IP",
+      "The port number",
+      "The client\u2019s domain",
+      "The destination domain"
+    ],
+    "answer": "The destination domain",
+    "id": 174
+  },
+  {
+    "topic": "Distributed Systems",
+    "question": "Why are sockets used in distributed systems? (variant)",
+    "options": [
+      "To allocate memory",
+      "To manage GUI events",
+      "To send messages between processes",
+      "To encrypt data"
+    ],
+    "answer": "To send messages between processes",
+    "id": 175
+  },
+  {
+    "topic": "Operating Systems",
+    "question": "What is the role of the shell in an OS? (variant)",
+    "options": [
+      "Manage memory",
+      "Provide GUI",
+      "Interpret user commands",
+      "Handle interrupts"
+    ],
+    "answer": "Interpret user commands",
+    "id": 176
+  },
+  {
+    "topic": "Application Layer",
+    "question": "What does the 'Host' header in an HTTP request specify? (variant)",
+    "options": [
+      "The server\u2019s IP",
+      "The port number",
+      "The client\u2019s domain",
+      "The destination domain"
+    ],
+    "answer": "The destination domain",
+    "id": 177
+  },
+  {
+    "topic": "Network Layer",
+    "question": "What is the purpose of the TTL field in an IP packet? (variant)",
+    "options": [
+      "Count bytes sent",
+      "Avoid infinite loops",
+      "Encrypt header",
+      "Identify protocol"
+    ],
+    "answer": "Avoid infinite loops",
+    "id": 178
+  },
+  {
+    "topic": "Application Layer",
+    "question": "What does the 'Host' header in an HTTP request specify? (variant)",
+    "options": [
+      "The server\u2019s IP",
+      "The port number",
+      "The client\u2019s domain",
+      "The destination domain"
+    ],
+    "answer": "The destination domain",
+    "id": 179
+  },
+  {
+    "topic": "Network Layer",
+    "question": "Which protocol reports errors in the network layer? (variant)",
+    "options": [
+      "IP",
+      "TCP",
+      "DHCP",
+      "ICMP"
+    ],
+    "answer": "ICMP",
+    "id": 180
+  },
+  {
+    "topic": "Transport Layer",
+    "question": "In TCP, what does the SYN flag indicate? (variant)",
+    "options": [
+      "Data ready to send",
+      "Session termination",
+      "Request to establish a connection",
+      "Packet loss"
+    ],
+    "answer": "Request to establish a connection",
+    "id": 181
+  },
+  {
+    "topic": "Operating Systems",
+    "question": "What is the role of the shell in an OS? (variant)",
+    "options": [
+      "Manage memory",
+      "Provide GUI",
+      "Interpret user commands",
+      "Handle interrupts"
+    ],
+    "answer": "Interpret user commands",
+    "id": 182
+  },
+  {
+    "topic": "Transport Layer",
+    "question": "What is the main role of TCP flow control? (variant)",
+    "options": [
+      "Minimize packet loss",
+      "Limit receiver overload",
+      "Avoid routing loops",
+      "Encrypt segments"
+    ],
+    "answer": "Limit receiver overload",
+    "id": 183
+  },
+  {
+    "topic": "Network Layer",
+    "question": "What is the purpose of the TTL field in an IP packet? (variant)",
+    "options": [
+      "Count bytes sent",
+      "Avoid infinite loops",
+      "Encrypt header",
+      "Identify protocol"
+    ],
+    "answer": "Avoid infinite loops",
+    "id": 184
+  },
+  {
+    "topic": "Distributed Systems",
+    "question": "Which of the following is a common use of Remote Procedure Calls (RPC)? (variant)",
+    "options": [
+      "Local file access",
+      "Remote method invocation",
+      "Thread creation",
+      "Socket opening"
+    ],
+    "answer": "Remote method invocation",
+    "id": 185
+  },
+  {
+    "topic": "Transport Layer",
+    "question": "In TCP, what does the SYN flag indicate? (variant)",
+    "options": [
+      "Data ready to send",
+      "Session termination",
+      "Request to establish a connection",
+      "Packet loss"
+    ],
+    "answer": "Request to establish a connection",
+    "id": 186
+  },
+  {
+    "topic": "Operating Systems",
+    "question": "What is the role of the shell in an OS? (variant)",
+    "options": [
+      "Manage memory",
+      "Provide GUI",
+      "Interpret user commands",
+      "Handle interrupts"
+    ],
+    "answer": "Interpret user commands",
+    "id": 187
+  },
+  {
+    "topic": "Operating Systems",
+    "question": "Which type of scheduler determines which job enters the ready queue? (variant)",
+    "options": [
+      "Short-term",
+      "Medium-term",
+      "Long-term",
+      "Preemptive"
+    ],
+    "answer": "Long-term",
+    "id": 188
+  },
+  {
+    "topic": "Application Layer",
+    "question": "Which protocol is used to send messages between mail servers? (variant)",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "POP3",
+      "DNS"
+    ],
+    "answer": "SMTP",
+    "id": 189
+  },
+  {
+    "topic": "Transport Layer",
+    "question": "What is the main role of TCP flow control? (variant)",
+    "options": [
+      "Minimize packet loss",
+      "Limit receiver overload",
+      "Avoid routing loops",
+      "Encrypt segments"
+    ],
+    "answer": "Limit receiver overload",
+    "id": 190
+  },
+  {
+    "topic": "Application Layer",
+    "question": "What does the 'Host' header in an HTTP request specify? (variant)",
+    "options": [
+      "The server\u2019s IP",
+      "The port number",
+      "The client\u2019s domain",
+      "The destination domain"
+    ],
+    "answer": "The destination domain",
+    "id": 191
+  },
+  {
+    "topic": "Network Layer",
+    "question": "What does a router use to forward packets? (variant)",
+    "options": [
+      "Destination MAC",
+      "Port number",
+      "Destination IP",
+      "Socket ID"
+    ],
+    "answer": "Destination IP",
+    "id": 192
+  },
+  {
+    "topic": "Network Layer",
+    "question": "Which protocol reports errors in the network layer? (variant)",
+    "options": [
+      "IP",
+      "TCP",
+      "DHCP",
+      "ICMP"
+    ],
+    "answer": "ICMP",
+    "id": 193
+  },
+  {
+    "topic": "Operating Systems",
+    "question": "Which type of scheduler determines which job enters the ready queue? (variant)",
+    "options": [
+      "Short-term",
+      "Medium-term",
+      "Long-term",
+      "Preemptive"
+    ],
+    "answer": "Long-term",
+    "id": 194
+  },
+  {
+    "topic": "Network Layer",
+    "question": "What does a router use to forward packets? (variant)",
+    "options": [
+      "Destination MAC",
+      "Port number",
+      "Destination IP",
+      "Socket ID"
+    ],
+    "answer": "Destination IP",
+    "id": 195
+  },
+  {
+    "topic": "Transport Layer",
+    "question": "What is the main role of TCP flow control? (variant)",
+    "options": [
+      "Minimize packet loss",
+      "Limit receiver overload",
+      "Avoid routing loops",
+      "Encrypt segments"
+    ],
+    "answer": "Limit receiver overload",
+    "id": 196
+  },
+  {
+    "topic": "Network Layer",
+    "question": "What is the purpose of the TTL field in an IP packet? (variant)",
+    "options": [
+      "Count bytes sent",
+      "Avoid infinite loops",
+      "Encrypt header",
+      "Identify protocol"
+    ],
+    "answer": "Avoid infinite loops",
+    "id": 197
+  },
+  {
+    "topic": "Application Layer",
+    "question": "What does the 'Host' header in an HTTP request specify? (variant)",
+    "options": [
+      "The server\u2019s IP",
+      "The port number",
+      "The client\u2019s domain",
+      "The destination domain"
+    ],
+    "answer": "The destination domain",
+    "id": 198
+  },
+  {
+    "topic": "Operating Systems",
+    "question": "What is the role of the shell in an OS? (variant)",
+    "options": [
+      "Manage memory",
+      "Provide GUI",
+      "Interpret user commands",
+      "Handle interrupts"
+    ],
+    "answer": "Interpret user commands",
+    "id": 199
+  },
+  {
+    "topic": "Distributed Systems",
+    "question": "Why are sockets used in distributed systems? (variant)",
+    "options": [
+      "To allocate memory",
+      "To manage GUI events",
+      "To send messages between processes",
+      "To encrypt data"
+    ],
+    "answer": "To send messages between processes",
+    "id": 200
+  },
+  {
+    "topic": "Transport Layer",
+    "question": "What information does a UDP socket use for demultiplexing? (variant)",
+    "options": [
+      "Source IP and port",
+      "MAC address",
+      "Only destination port",
+      "Protocol type"
+    ],
+    "answer": "Source IP and port",
+    "id": 201
+  },
+  {
+    "topic": "Transport Layer",
+    "question": "What information does a UDP socket use for demultiplexing? (variant)",
+    "options": [
+      "Source IP and port",
+      "MAC address",
+      "Only destination port",
+      "Protocol type"
+    ],
+    "answer": "Source IP and port",
+    "id": 202
+  },
+  {
+    "topic": "Application Layer",
+    "question": "Which layer in the TCP/IP model is responsible for supporting user applications? (variant)",
+    "options": [
+      "Network",
+      "Application",
+      "Data Link",
+      "Transport"
+    ],
+    "answer": "Application",
+    "id": 203
+  },
+  {
+    "topic": "Transport Layer",
+    "question": "What information does a UDP socket use for demultiplexing? (variant)",
+    "options": [
+      "Source IP and port",
+      "MAC address",
+      "Only destination port",
+      "Protocol type"
+    ],
+    "answer": "Source IP and port",
+    "id": 204
+  },
+  {
+    "topic": "Operating Systems",
+    "question": "Which system call replaces a process's memory space with a new program? (variant)",
+    "options": [
+      "exec()",
+      "fork()",
+      "wait()",
+      "read()"
+    ],
+    "answer": "exec()",
+    "id": 205
+  },
+  {
+    "topic": "Network Layer",
+    "question": "What is the purpose of the TTL field in an IP packet? (variant)",
+    "options": [
+      "Count bytes sent",
+      "Avoid infinite loops",
+      "Encrypt header",
+      "Identify protocol"
+    ],
+    "answer": "Avoid infinite loops",
+    "id": 206
+  },
+  {
+    "topic": "Transport Layer",
+    "question": "What information does a UDP socket use for demultiplexing? (variant)",
+    "options": [
+      "Source IP and port",
+      "MAC address",
+      "Only destination port",
+      "Protocol type"
+    ],
+    "answer": "Source IP and port",
+    "id": 207
+  },
+  {
+    "topic": "Distributed Systems",
+    "question": "Which of the following is a common use of Remote Procedure Calls (RPC)? (variant)",
+    "options": [
+      "Local file access",
+      "Remote method invocation",
+      "Thread creation",
+      "Socket opening"
+    ],
+    "answer": "Remote method invocation",
+    "id": 208
+  },
+  {
+    "topic": "Network Layer",
+    "question": "Which protocol reports errors in the network layer? (variant)",
+    "options": [
+      "IP",
+      "TCP",
+      "DHCP",
+      "ICMP"
+    ],
+    "answer": "ICMP",
+    "id": 209
   }
 ]

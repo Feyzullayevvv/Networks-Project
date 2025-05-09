@@ -3,14 +3,24 @@
     "id": 1,
     "topic": "Application Layer",
     "question": "Which protocol is primarily used for retrieving web pages from a server?",
-    "options": ["SMTP", "FTP", "DNS", "HTTP"],
+    "options": [
+      "SMTP",
+      "FTP",
+      "DNS",
+      "HTTP"
+    ],
     "answer": "HTTP"
   },
   {
     "id": 2,
     "topic": "Network Layer",
     "question": "Which protocol is responsible for logical addressing and routing of packets?",
-    "options": ["IP", "Ethernet", "TCP", "UDP"],
+    "options": [
+      "IP",
+      "Ethernet",
+      "TCP",
+      "UDP"
+    ],
     "answer": "IP"
   },
   {
@@ -29,7 +39,12 @@
     "id": 4,
     "topic": "Transport Layer",
     "question": "Which protocol ensures reliable, ordered, and error-checked delivery of data?",
-    "options": ["IP", "ICMP", "UDP", "TCP"],
+    "options": [
+      "IP",
+      "ICMP",
+      "UDP",
+      "TCP"
+    ],
     "answer": "TCP"
   },
   {
@@ -60,7 +75,12 @@
     "id": 7,
     "topic": "Security",
     "question": "What does encryption ensure in network communication?",
-    "options": ["Confidentiality", "Speed", "Availability", "Integrity"],
+    "options": [
+      "Confidentiality",
+      "Speed",
+      "Availability",
+      "Integrity"
+    ],
     "answer": "Confidentiality"
   },
   {
@@ -91,7 +111,12 @@
     "id": 10,
     "topic": "Network Layer",
     "question": "Which of the following devices operates at the network layer?",
-    "options": ["Repeater", "Switch", "Hub", "Router"],
+    "options": [
+      "Repeater",
+      "Switch",
+      "Hub",
+      "Router"
+    ],
     "answer": "Router"
   },
   {
@@ -110,7 +135,12 @@
     "id": 12,
     "topic": "Operating Systems",
     "question": "Which component is responsible for managing hardware resources in an os?",
-    "options": ["Compiler", "Kernel", "Scheduler", "Shell"],
+    "options": [
+      "Compiler",
+      "Kernel",
+      "Scheduler",
+      "Shell"
+    ],
     "answer": "Kernel"
   },
   {
@@ -141,14 +171,24 @@
     "id": 15,
     "topic": "Synchronization",
     "question": "Which keyword is used in java to prevent concurrent access to a method?",
-    "options": ["synchronized", "final", "volatile", "private"],
+    "options": [
+      "synchronized",
+      "final",
+      "volatile",
+      "private"
+    ],
     "answer": "synchronized"
   },
   {
     "id": 16,
     "topic": "Application Layer",
     "question": "Which protocol is used for sending emails?",
-    "options": ["DHCP", "SMTP", "HTTP", "FTP"],
+    "options": [
+      "DHCP",
+      "SMTP",
+      "HTTP",
+      "FTP"
+    ],
     "answer": "SMTP"
   },
   {
@@ -203,14 +243,24 @@
     "id": 21,
     "topic": "Security",
     "question": "Which term describes the process of confirming a user's identity?",
-    "options": ["Authentication", "Authorization", "Encryption", "Validation"],
+    "options": [
+      "Authentication",
+      "Authorization",
+      "Encryption",
+      "Validation"
+    ],
     "answer": "Authentication"
   },
   {
     "id": 22,
     "topic": "Synchronization",
     "question": "What mechanism prevents multiple threads from accessing a shared resource simultaneously?",
-    "options": ["Deadlock", "Parallelism", "Scheduler", "Mutex"],
+    "options": [
+      "Deadlock",
+      "Parallelism",
+      "Scheduler",
+      "Mutex"
+    ],
     "answer": "Mutex"
   },
   {
@@ -229,7 +279,12 @@
     "id": 24,
     "topic": "Network Layer",
     "question": "What information is used by routers to forward data packets?",
-    "options": ["IP address", "Port number", "MAC address", "Protocol version"],
+    "options": [
+      "IP address",
+      "Port number",
+      "MAC address",
+      "Protocol version"
+    ],
     "answer": "IP address"
   },
   {
@@ -284,7 +339,12 @@
     "id": 29,
     "topic": "Security",
     "question": "Which of the following is a symmetric encryption algorithm?",
-    "options": ["RSA", "ECC", "DSA", "AES"],
+    "options": [
+      "RSA",
+      "ECC",
+      "DSA",
+      "AES"
+    ],
     "answer": "AES"
   },
   {
@@ -411,7 +471,12 @@
     "id": 40,
     "topic": "Application Layer",
     "question": "(?)which application layer protocol translates domain names into ip addresses?",
-    "options": ["FTP", "SMTP", "DNS", "DHCP"],
+    "options": [
+      "FTP",
+      "SMTP",
+      "DNS",
+      "DHCP"
+    ],
     "answer": "DNS"
   },
   {
@@ -442,14 +507,24 @@
     "id": 43,
     "topic": "Transport Layer",
     "question": "Which tcp flag is used to initiate a connection?",
-    "options": ["SYN", "RST", "FIN", "ACK"],
+    "options": [
+      "SYN",
+      "RST",
+      "FIN",
+      "ACK"
+    ],
     "answer": "SYN"
   },
   {
     "id": 44,
     "topic": "Operating Systems",
     "question": "Which memory management technique divides memory into fixed-size blocks?",
-    "options": ["Swapping", "Thrashing", "Paging", "Segmentation"],
+    "options": [
+      "Swapping",
+      "Thrashing",
+      "Paging",
+      "Segmentation"
+    ],
     "answer": "Paging"
   },
   {
@@ -468,14 +543,24 @@
     "id": 46,
     "topic": "Security",
     "question": "Which security feature prevents unauthorized access to a network?",
-    "options": ["Encryption", "Caching", "Threading", "Firewall"],
+    "options": [
+      "Encryption",
+      "Caching",
+      "Threading",
+      "Firewall"
+    ],
     "answer": "Firewall"
   },
   {
     "id": 47,
     "topic": "Synchronization",
     "question": "Which of the following is used to protect critical sections in a multithreaded application?",
-    "options": ["Semaphore", "Pointer", "Array", "Interface"],
+    "options": [
+      "Semaphore",
+      "Pointer",
+      "Array",
+      "Interface"
+    ],
     "answer": "Semaphore"
   },
   {
@@ -530,14 +615,24 @@
     "id": 52,
     "topic": "Threads & Concurrency",
     "question": "What does a thread share with other threads in the same process?",
-    "options": ["Register values", "Memory space", "Program counter", "Stack"],
+    "options": [
+      "Register values",
+      "Memory space",
+      "Program counter",
+      "Stack"
+    ],
     "answer": "Memory space"
   },
   {
     "id": 53,
     "topic": "Security",
     "question": "Which term describes a technique that disguises data to appear as something else?",
-    "options": ["Tunneling", "Steganography", "Spoofing", "Obfuscation"],
+    "options": [
+      "Tunneling",
+      "Steganography",
+      "Spoofing",
+      "Obfuscation"
+    ],
     "answer": "Steganography"
   },
   {
@@ -556,14 +651,24 @@
     "id": 55,
     "topic": "Application Layer",
     "question": "Which application layer protocol is typically used for secure web transactions?",
-    "options": ["SMTP", "FTP", "HTTP", "HTTPS"],
+    "options": [
+      "SMTP",
+      "FTP",
+      "HTTP",
+      "HTTPS"
+    ],
     "answer": "HTTPS"
   },
   {
     "id": 56,
     "topic": "Network Layer",
     "question": "Which protocol is used to dynamically assign ip addresses to devices?",
-    "options": ["ARP", "DNS", "DHCP", "ICMP"],
+    "options": [
+      "ARP",
+      "DNS",
+      "DHCP",
+      "ICMP"
+    ],
     "answer": "DHCP"
   },
   {
@@ -594,28 +699,48 @@
     "id": 59,
     "topic": "Application Layer",
     "question": "What is the default port number for http?",
-    "options": ["21", "443", "80", "25"],
+    "options": [
+      "21",
+      "443",
+      "80",
+      "25"
+    ],
     "answer": "80"
   },
   {
     "id": 60,
     "topic": "Network Layer",
     "question": "Which device uses routing tables to determine the best path for data packets?",
-    "options": ["Repeater", "Hub", "Switch", "Router"],
+    "options": [
+      "Repeater",
+      "Hub",
+      "Switch",
+      "Router"
+    ],
     "answer": "Router"
   },
   {
     "id": 61,
     "topic": "Distributed Systems",
     "question": "(?)which type of clock synchronization method uses message exchanges between systems?",
-    "options": ["GPS", "Atomic clock", "Christian's algorithm", "RTC sync"],
+    "options": [
+      "GPS",
+      "Atomic clock",
+      "Christian's algorithm",
+      "RTC sync"
+    ],
     "answer": "Christian's algorithm"
   },
   {
     "id": 62,
     "topic": "Transport Layer",
     "question": "Which tcp feature helps in adjusting the flow of data based on network conditions?",
-    "options": ["Checksum", "Header length", "Window size", "TTL"],
+    "options": [
+      "Checksum",
+      "Header length",
+      "Window size",
+      "TTL"
+    ],
     "answer": "Window size"
   },
   {
@@ -646,7 +771,12 @@
     "id": 65,
     "topic": "Security",
     "question": "Which of the following is an attack where communication is secretly intercepted?",
-    "options": ["Brute force", "Man-in-the-middle", "DoS", "Phishing"],
+    "options": [
+      "Brute force",
+      "Man-in-the-middle",
+      "DoS",
+      "Phishing"
+    ],
     "answer": "Man-in-the-middle"
   },
   {
@@ -677,7 +807,12 @@
     "id": 68,
     "topic": "Application Layer",
     "question": "Which of the following protocols is commonly used for retrieving emails from a server?",
-    "options": ["SMTP", "POP3", "FTP", "HTTP"],
+    "options": [
+      "SMTP",
+      "POP3",
+      "FTP",
+      "HTTP"
+    ],
     "answer": "POP3"
   },
   {
@@ -696,7 +831,12 @@
     "id": 70,
     "topic": "Distributed Systems",
     "question": "Which protocol enables time synchronization across distributed systems?",
-    "options": ["DNS", "ARP", "NTP", "SMTP"],
+    "options": [
+      "DNS",
+      "ARP",
+      "NTP",
+      "SMTP"
+    ],
     "answer": "NTP"
   },
   {
@@ -775,91 +915,156 @@
     "id": 77,
     "topic": "Network Layer",
     "question": "Which device maintains and updates routing tables in a network?",
-    "options": ["Router", "Firewall", "Hub", "Switch"],
+    "options": [
+      "Router",
+      "Firewall",
+      "Hub",
+      "Switch"
+    ],
     "answer": "Router"
   },
   {
     "id": 78,
     "topic": "Application Layer",
     "question": "Which protocol is used to retrieve emails from a server?",
-    "options": ["POP3", "SMTP", "DNS", "FTP"],
+    "options": [
+      "POP3",
+      "SMTP",
+      "DNS",
+      "FTP"
+    ],
     "answer": "POP3"
   },
   {
     "id": 79,
     "topic": "Application Layer",
     "question": "Which of the following is a stateless protocol?",
-    "options": ["TCP", "FTP", "SMTP", "HTTP"],
+    "options": [
+      "TCP",
+      "FTP",
+      "SMTP",
+      "HTTP"
+    ],
     "answer": "HTTP"
   },
   {
     "id": 80,
     "topic": "Application Layer",
     "question": "Which protocol is responsible for transferring files over the internet?",
-    "options": ["HTTP", "FTP", "DNS", "SMTP"],
+    "options": [
+      "HTTP",
+      "FTP",
+      "DNS",
+      "SMTP"
+    ],
     "answer": "FTP"
   },
   {
     "id": 81,
     "topic": "Network Layer",
     "question": "Which device works at the network layer?",
-    "options": ["Router", "Hub", "Switch", "Bridge"],
+    "options": [
+      "Router",
+      "Hub",
+      "Switch",
+      "Bridge"
+    ],
     "answer": "Router"
   },
   {
     "id": 82,
     "topic": "Network Layer",
     "question": "Which protocol is responsible for error messages in the network layer?",
-    "options": ["ICMP", "TCP", "FTP", "DHCP"],
+    "options": [
+      "ICMP",
+      "TCP",
+      "FTP",
+      "DHCP"
+    ],
     "answer": "ICMP"
   },
   {
     "id": 83,
     "topic": "Distributed Systems",
     "question": "In distributed systems, which concept ensures components can fail independently?",
-    "options": ["Coupling", "Fault Tolerance", "Latency", "Encapsulation"],
+    "options": [
+      "Coupling",
+      "Fault Tolerance",
+      "Latency",
+      "Encapsulation"
+    ],
     "answer": "Fault Tolerance"
   },
   {
     "id": 84,
     "topic": "Distributed Systems",
     "question": "Which component helps remote method invocation?",
-    "options": ["RPC", "UDP", "TCP", "DNS"],
+    "options": [
+      "RPC",
+      "UDP",
+      "TCP",
+      "DNS"
+    ],
     "answer": "RPC"
   },
   {
     "id": 85,
     "topic": "Transport Layer",
     "question": "Udp is often used in which of the following?",
-    "options": ["Email", "Streaming", "File Transfer", "Login"],
+    "options": [
+      "Email",
+      "Streaming",
+      "File Transfer",
+      "Login"
+    ],
     "answer": "Streaming"
   },
   {
     "id": 86,
     "topic": "Transport Layer",
     "question": "Which field in a tcp header is used to identify the sending application?",
-    "options": ["Port", "ACK", "TTL", "Window"],
+    "options": [
+      "Port",
+      "ACK",
+      "TTL",
+      "Window"
+    ],
     "answer": "Port"
   },
   {
     "id": 87,
     "topic": "Operating Systems",
     "question": "Which system call is used to create a new process?",
-    "options": ["exec", "fork", "read", "write"],
+    "options": [
+      "exec",
+      "fork",
+      "read",
+      "write"
+    ],
     "answer": "fork"
   },
   {
     "id": 88,
     "topic": "Operating Systems",
     "question": "Which scheduler decides which process gets the cpu next?",
-    "options": ["Short-term", "Long-term", "Disk", "I/O"],
+    "options": [
+      "Short-term",
+      "Long-term",
+      "Disk",
+      "I/O"
+    ],
     "answer": "Short-term"
   },
   {
     "id": 89,
     "topic": "Threads & Concurrency",
     "question": "Which thread method causes one thread to wait for another?",
-    "options": ["join()", "start()", "run()", "wait()"],
+    "options": [
+      "join()",
+      "start()",
+      "run()",
+      "wait()"
+    ],
     "answer": "join()"
   },
   {
@@ -878,14 +1083,24 @@
     "id": 91,
     "topic": "Security",
     "question": "Which type of attack floods a server with traffic?",
-    "options": ["MITM", "DoS", "Spoofing", "Phishing"],
+    "options": [
+      "MITM",
+      "DoS",
+      "Spoofing",
+      "Phishing"
+    ],
     "answer": "DoS"
   },
   {
     "id": 92,
     "topic": "Security",
     "question": "What is used to transform plaintext into unreadable form?",
-    "options": ["Key", "Hash", "Cipher", "Nonce"],
+    "options": [
+      "Key",
+      "Hash",
+      "Cipher",
+      "Nonce"
+    ],
     "answer": "Cipher"
   },
   {
@@ -904,13 +1119,23 @@
     "id": 94,
     "topic": "Synchronization",
     "question": "Which is not a valid synchronization technique?",
-    "options": ["Mutex", "Semaphore", "Barrier", "Pipeline"],
+    "options": [
+      "Mutex",
+      "Semaphore",
+      "Barrier",
+      "Pipeline"
+    ],
     "answer": "Pipeline"
   },
   {
     "topic": "Application Layer",
     "question": "Which protocol is used to send messages between mail servers?",
-    "options": ["SMTP", "HTTP", "POP3", "DNS"],
+    "options": [
+      "SMTP",
+      "HTTP",
+      "POP3",
+      "DNS"
+    ],
     "answer": "SMTP",
     "id": 95
   },
@@ -929,7 +1154,12 @@
   {
     "topic": "Application Layer",
     "question": "Which layer in the tcp/ip model is responsible for supporting user applications?",
-    "options": ["Network", "Application", "Data Link", "Transport"],
+    "options": [
+      "Network",
+      "Application",
+      "Data Link",
+      "Transport"
+    ],
     "answer": "Application",
     "id": 97
   },
@@ -996,21 +1226,36 @@
   {
     "topic": "Network Layer",
     "question": "Which protocol reports errors in the network layer?",
-    "options": ["IP", "TCP", "DHCP", "ICMP"],
+    "options": [
+      "IP",
+      "TCP",
+      "DHCP",
+      "ICMP"
+    ],
     "answer": "ICMP",
     "id": 103
   },
   {
     "topic": "Operating Systems",
     "question": "Which system call replaces a process's memory space with a new program?",
-    "options": ["exec()", "fork()", "wait()", "read()"],
+    "options": [
+      "exec()",
+      "fork()",
+      "wait()",
+      "read()"
+    ],
     "answer": "exec()",
     "id": 104
   },
   {
     "topic": "Operating Systems",
     "question": "Which type of scheduler determines which job enters the ready queue?",
-    "options": ["Short-term", "Medium-term", "Long-term", "Preemptive"],
+    "options": [
+      "Short-term",
+      "Medium-term",
+      "Long-term",
+      "Preemptive"
+    ],
     "answer": "Long-term",
     "id": 105
   },
@@ -1041,7 +1286,12 @@
   {
     "topic": "Distributed Systems",
     "question": "Which communication model involves a client and a server?",
-    "options": ["Broadcast", "Multicast", "Client-server", "P2P"],
+    "options": [
+      "Broadcast",
+      "Multicast",
+      "Client-server",
+      "P2P"
+    ],
     "answer": "Client-server",
     "id": 108
   },

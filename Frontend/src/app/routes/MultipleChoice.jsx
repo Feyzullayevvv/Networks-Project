@@ -16,18 +16,67 @@ export default function MultipleChoice() {
   const [userAnswers, setUserAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
 
-  useEffect(() => {
-    resetQuiz();
-  }, []);
+  // Get previously shown questions from localStorage
+  const getShownQuestions = () => {
+    const shown = localStorage.getItem("shownMCQs");
+    return shown ? JSON.parse(shown) : [];
+  };
 
-  const resetQuiz = () => {
-    const shuffled = shuffleArray(questionsData)
-      .slice(0, MCQ_COUNT)
-      .map((q) => ({ ...q, options: shuffleArray(q.options) }));
-    setQuestions(shuffled);
+  // Update shown questions in localStorage
+  const updateShownQuestions = (newQuestions) => {
+    const shown = getShownQuestions();
+    const updated = [...shown, ...newQuestions.map((q) => q.id)];
+
+    // Reset if we've shown all questions
+    if (updated.length >= questionsData.length) {
+      localStorage.setItem("shownMCQs", JSON.stringify([]));
+      return [];
+    }
+
+    localStorage.setItem("shownMCQs", JSON.stringify(updated));
+    return updated;
+  };
+  useEffect(() => {
+    if (questions.length === 0) {
+      initializeQuiz();
+    }
+  }, []);
+  const initializeQuiz = () => {
+    const selectedQuestions = selectRandomQuestions();
+    setQuestions(selectedQuestions);
     setCurrentQuestion(0);
     setUserAnswers({});
     setSubmitted(false);
+  };
+
+  // Enhanced shuffle and selection
+  const selectRandomQuestions = () => {
+    const shownQuestionIds = getShownQuestions();
+    const availableQuestions = questionsData.filter(
+      (q) => !shownQuestionIds.includes(q.id)
+    );
+
+    // If running low on new questions, reset the shown questions
+    if (availableQuestions.length < MCQ_COUNT) {
+      localStorage.setItem("shownMCQs", JSON.stringify([]));
+      return shuffleArray([...questionsData])
+        .slice(0, MCQ_COUNT)
+        .map((q) => ({ ...q, options: shuffleArray([...q.options]) }));
+    }
+
+    // Select random questions from available ones
+    const selectedQuestions = shuffleArray([...availableQuestions])
+      .slice(0, MCQ_COUNT)
+      .map((q) => ({ ...q, options: shuffleArray([...q.options]) }));
+
+    // Update shown questions in localStorage
+    updateShownQuestions(selectedQuestions);
+
+    return selectedQuestions;
+  };
+
+  const resetQuiz = () => {
+    initializeQuiz();
   };
 
   const handleOptionClick = (option) => {
@@ -51,6 +100,17 @@ export default function MultipleChoice() {
   };
 
   const renderQuizContent = () => {
+    if (questions.length === 0) {
+      return (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="flex justify-center items-center py-8"
+        >
+          <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-indigo-500"></div>
+        </motion.div>
+      );
+    }
     if (!submitted && questions.length > 0 && questions[currentQuestion]) {
       return (
         <motion.div
