@@ -1,55 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { QUIZ_TYPES } from "../constants/quiz";
-import colors from "../config/colors";
-
-const styles = {
-  container: {
-    padding: "2rem",
-    background: "rgba(255, 255, 255, 0.95)",
-    borderRadius: "1rem",
-    marginBottom: "1.5rem",
-    boxShadow: "0 4px 20px rgba(99, 102, 241, 0.1)",
-    backdropFilter: "blur(10px)",
-    border: "1px solid rgba(99, 102, 241, 0.2)",
-  },
-  question: {
-    color: colors.text.primary,
-    fontSize: "1.25rem",
-    marginBottom: "2rem",
-    fontWeight: "600",
-    lineHeight: "1.6",
-  },
-  optionsContainer: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "0.75rem",
-  },
-  option: {
-    padding: "1rem 1.5rem",
-    borderRadius: "0.75rem",
-    cursor: "pointer",
-    border: `1px solid rgba(99, 102, 241, 0.2)`,
-    background: "rgba(255, 255, 255, 0.9)",
-    color: colors.text.primary,
-    fontSize: "1rem",
-    fontWeight: "500",
-    transition: "all 0.2s ease",
-    userSelect: "none",
-    position: "relative",
-    overflow: "hidden",
-  },
-  selectedOption: {
-    background: colors.primary.gradient,
-    color: "#ffffff",
-    border: "none",
-    boxShadow: "0 4px 12px rgba(99, 102, 241, 0.3)",
-  },
-  hoverOption: {
-    border: `1px solid ${colors.primary.main}`,
-    background: "rgba(99, 102, 241, 0.1)",
-  },
-};
 
 const QuestionCard = ({
   question,
@@ -62,22 +13,24 @@ const QuestionCard = ({
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.4 }}
-    style={styles.container}
+    className="p-8 mb-6 rounded-xl bg-white/95 backdrop-blur border border-[rgba(99,102,241,0.2)] shadow-[0_4px_20px_rgba(99,102,241,0.1)]"
   >
-    <h3 style={styles.question}>
+    <h3 className="text-xl font-semibold leading-relaxed text-[#1e1b4b] mb-8">
       {index + 1}. {question.question}
     </h3>
-    <div style={styles.optionsContainer}>
+    <div className="flex flex-col gap-3">
       {question.options.map((option, i) => (
         <motion.div
           key={i}
           whileHover={selectedOption !== option ? { scale: 1.02, y: -2 } : {}}
           whileTap={{ scale: 0.98 }}
           onClick={() => onOptionClick(option)}
-          style={{
-            ...styles.option,
-            ...(selectedOption === option && styles.selectedOption),
-          }}
+          className={`px-6 py-4 rounded-xl border text-base font-medium transition-all duration-200 cursor-pointer select-none relative overflow-hidden 
+            ${
+              selectedOption === option
+                ? "bg-[linear-gradient(135deg,#818cf8_0%,#6366f1_100%)] text-white border-none shadow-md"
+                : "bg-white/90 text-[#1e1b4b] border-[rgba(99,102,241,0.2)] hover:border-[#6366f1] hover:bg-[rgba(99,102,241,0.1)]"
+            }`}
         >
           {option}
         </motion.div>

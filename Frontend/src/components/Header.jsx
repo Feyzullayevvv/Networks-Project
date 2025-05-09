@@ -1,47 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import colors from "../config/colors";
-
-const styles = {
-  container: {
-    position: "relative",
-    width: "100%",
-    marginBottom: "2rem",
-    padding: "1rem",
-  },
-  backButton: {
-    position: "absolute",
-    top: "50%",
-    left: "1rem",
-    transform: "translateY(-50%)",
-    zIndex: 10,
-    padding: "0.75rem 1.25rem",
-    borderRadius: "0.75rem",
-    background: "rgba(255, 255, 255, 0.95)",
-    border: "1px solid rgba(99, 102, 241, 0.2)",
-    color: colors.text.primary,
-    fontSize: "0.9rem",
-    fontWeight: "500",
-    display: "flex",
-    alignItems: "center",
-    gap: "0.5rem",
-    cursor: "pointer",
-    transition: "all 0.2s ease",
-    boxShadow: "0 2px 10px rgba(99, 102, 241, 0.1)",
-    backdropFilter: "blur(8px)",
-  },
-  title: {
-    textAlign: "center",
-    background: colors.primary.gradient,
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-    fontSize: "2.5rem",
-    fontWeight: "700",
-    margin: 0,
-    padding: "1rem 0",
-  },
-};
 
 const Header = ({
   title,
@@ -59,18 +18,21 @@ const Header = ({
     : {};
 
   return (
-    <div style={styles.container}>
+    <div className="w-full mb-8 px-4 sm:px-6 flex flex-col items-center gap-4 lg:gap-0 lg:justify-center relative">
       <motion.button
         onClick={onBack}
         whileHover={{ scale: 1.02, x: -2 }}
         whileTap={{ scale: 0.98 }}
-        style={styles.backButton}
+        className="px-5 py-3 rounded-xl bg-white/95 text-slate-900 text-sm font-medium flex items-center gap-2 border border-indigo-200 shadow backdrop-blur-sm transition-all lg:absolute lg:left-4 lg:top-1/2 lg:-translate-y-1/2"
       >
         <ArrowLeft size={16} />
         {backButtonText}
       </motion.button>
 
-      <TitleComponent {...animationProps} style={styles.title}>
+      <TitleComponent
+        {...animationProps}
+        className="text-center text-3xl sm:text-5xl font-bold bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent leading-tight"
+      >
         {title}
       </TitleComponent>
     </div>

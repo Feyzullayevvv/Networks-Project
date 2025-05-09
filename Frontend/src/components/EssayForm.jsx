@@ -1,84 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import colors from "../config/colors";
-
-const styles = {
-  container: {
-    maxWidth: 800,
-    margin: "auto",
-    padding: "2rem",
-    borderRadius: "1rem",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    background: "rgba(255, 255, 255, 0.95)",
-    boxShadow: "0 4px 20px rgba(99, 102, 241, 0.1)",
-    backdropFilter: "blur(10px)",
-    border: "1px solid rgba(99, 102, 241, 0.2)",
-  },
-  question: {
-    color: colors.text.primary,
-    width: "100%",
-    fontSize: "1.25rem",
-    fontWeight: "600",
-    marginBottom: "1.5rem",
-    lineHeight: "1.6",
-  },
-  textarea: {
-    width: "100%",
-    minHeight: "200px",
-    padding: "1rem",
-    background: "rgba(255, 255, 255, 0.9)",
-    border: "1px solid rgba(99, 102, 241, 0.2)",
-    borderRadius: "0.75rem",
-    color: colors.text.primary,
-    fontSize: "1rem",
-    lineHeight: "1.6",
-    resize: "vertical",
-    transition: "all 0.2s ease",
-    fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
-    "&:focus": {
-      outline: "none",
-      borderColor: colors.primary.main,
-      boxShadow: "0 0 0 3px rgba(99, 102, 241, 0.2)",
-    },
-  },
-  wordCount: {
-    width: "100%",
-    textAlign: "right",
-    marginTop: "0.75rem",
-    fontSize: "0.9rem",
-    fontWeight: "500",
-  },
-  buttonContainer: {
-    marginTop: "2rem",
-    display: "flex",
-    gap: "1rem",
-    justifyContent: "center",
-  },
-  button: {
-    padding: "1rem 3rem",
-    fontSize: "1.125rem",
-    fontWeight: "600",
-    border: "none",
-    borderRadius: "0.75rem",
-    background: colors.primary.gradient,
-    color: "#ffffff",
-    cursor: "pointer",
-    transition: "all 0.2s ease",
-    boxShadow: "0 4px 15px rgba(99, 102, 241, 0.3)",
-    minWidth: "140px",
-  },
-  outlineButton: {
-    background: "transparent",
-    border: `2px solid ${colors.primary.main}`,
-    color: colors.primary.main,
-  },
-  disabledButton: {
-    opacity: 0.5,
-    cursor: "not-allowed",
-  },
-};
 
 const EssayForm = ({
   question,
@@ -97,9 +18,9 @@ const EssayForm = ({
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.4 }}
-    style={styles.container}
+    className="max-w-3xl mx-auto p-8 rounded-xl bg-white/95 border border-indigo-200 shadow-xl backdrop-blur flex flex-col items-center"
   >
-    <h3 style={styles.question}>
+    <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-slate-900 w-full mb-6 leading-relaxed">
       {questionNumber}. {question}
     </h3>
 
@@ -107,30 +28,26 @@ const EssayForm = ({
       value={text}
       onChange={(e) => onTextChange(e.target.value)}
       placeholder="Write your answer here (minimum 100 words)..."
-      style={styles.textarea}
+      className="w-full min-h-[200px] p-4 text-base rounded-lg border border-indigo-200 bg-white/90 text-slate-900 resize-y outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition"
     />
 
     <div
-      style={{
-        ...styles.wordCount,
-        color: wordCount < 100 ? "#ef4444" : "#22c55e",
-      }}
+      className={`w-full text-right mt-3 text-sm font-medium ${
+        wordCount < 100 ? "text-red-500" : "text-green-500"
+      }`}
     >
       {wordCount < 100
         ? `${wordCount}/100 words required`
         : `✓ ${wordCount} words`}
     </div>
 
-    <div style={styles.buttonContainer}>
+    <div className="mt-8 flex flex-wrap justify-center gap-4">
       {showPrevious && (
         <motion.button
           onClick={onPrevious}
           whileHover={{ scale: 1.02, y: -2 }}
           whileTap={{ scale: 0.98 }}
-          style={{
-            ...styles.button,
-            ...styles.outlineButton,
-          }}
+          className="px-6 py-3 text-base font-semibold rounded-lg border-2 border-indigo-500 text-indigo-500 bg-transparent shadow transition-all"
         >
           Previous
         </motion.button>
@@ -138,12 +55,13 @@ const EssayForm = ({
       <motion.button
         onClick={isLastQuestion ? onSubmit : onNext}
         disabled={wordCount < 100 || loading}
-        whileHover={wordCount >= 100 ? { scale: 1.02, y: -2 } : {}}
-        whileTap={wordCount >= 100 ? { scale: 0.98 } : {}}
-        style={{
-          ...styles.button,
-          ...(wordCount < 100 && styles.disabledButton),
-        }}
+        whileHover={wordCount >= 100 && !loading ? { scale: 1.02, y: -2 } : {}}
+        whileTap={wordCount >= 100 && !loading ? { scale: 0.98 } : {}}
+        className={`px-6 py-3 text-base font-semibold rounded-lg shadow transition-all min-w-[140px] ${
+          wordCount >= 100 && !loading
+            ? "bg-gradient-to-r from-indigo-400 to-indigo-500 text-white"
+            : "bg-gray-300 text-white cursor-not-allowed"
+        }`}
       >
         {isLastQuestion ? "Submit" : "Next"}
       </motion.button>

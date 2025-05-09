@@ -6,69 +6,8 @@ import QuizNavigation from "../../components/QuizNavigation";
 import Header from "../../components/Header";
 import QuestionCard from "../../components/QuestionCard";
 import ReviewSection from "../../components/ReviewSection";
-import colors from "../../config/colors";
 import { shuffleArray, calculateScore } from "../../utils/quiz";
 import { MCQ_COUNT, QUIZ_TYPES } from "../../constants/quiz";
-
-const styles = {
-  container: {
-    position: "relative",
-    minHeight: "100vh",
-    padding: "2rem 4rem",
-    background: colors.background,
-    color: colors.text.primary,
-    fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
-  },
-  quizContainer: {
-    maxWidth: "800px",
-    margin: "2rem auto",
-    background: "rgba(255, 255, 255, 0.9)",
-    padding: "2rem",
-    borderRadius: "1rem",
-    boxShadow: "0 4px 20px rgba(99, 102, 241, 0.1)",
-    backdropFilter: "blur(10px)",
-    border: `1px solid ${colors.card.border}`,
-  },
-  buttonContainer: {
-    marginTop: "2rem",
-    display: "flex",
-    justifyContent: "center",
-    gap: "1rem",
-    padding: "0 1rem",
-  },
-  button: {
-    padding: "1rem 3rem",
-    fontSize: "1.125rem",
-    fontWeight: "600",
-    border: "none",
-    borderRadius: "0.75rem",
-    background: colors.primary.gradient,
-    color: "#ffffff",
-    cursor: "pointer",
-    transition: "all 0.2s ease",
-    boxShadow: "0 4px 15px rgba(99, 102, 241, 0.3)",
-    minWidth: "140px", // Add this to maintain consistent button widths
-  },
-  disabledButton: {
-    opacity: 0.5,
-    cursor: "not-allowed",
-  },
-  headerContainer: {
-    position: "relative",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: "2rem",
-    width: "100%",
-  },
-  navigationWrapper: {
-    position: "absolute",
-    right: "2rem",
-    top: "50%",
-    transform: "translateY(-50%)",
-    zIndex: 10,
-  },
-};
 
 export default function MultipleChoice() {
   const navigate = useNavigate();
@@ -106,6 +45,7 @@ export default function MultipleChoice() {
       setCurrentQuestion((prev) => prev - 1);
     }
   };
+
   const handleSubmit = () => {
     setSubmitted(true);
   };
@@ -125,18 +65,13 @@ export default function MultipleChoice() {
             onOptionClick={handleOptionClick}
             type={QUIZ_TYPES.MCQ}
           />
-          <div style={styles.buttonContainer}>
+          <div className="mt-8 flex justify-center gap-4 px-4">
             {currentQuestion > 0 && (
               <motion.button
                 onClick={handlePrevious}
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                style={{
-                  ...styles.button,
-                  background: "transparent",
-                  border: `2px solid ${colors.primary.main}`,
-                  color: colors.primary.main,
-                }}
+                className="px-6 py-3 text-lg font-semibold rounded-lg border-2 border-indigo-500 text-indigo-500 bg-transparent shadow"
               >
                 Previous
               </motion.button>
@@ -150,10 +85,11 @@ export default function MultipleChoice() {
               disabled={!userAnswers[currentQuestion]}
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
-              style={{
-                ...styles.button,
-                ...(!userAnswers[currentQuestion] && styles.disabledButton),
-              }}
+              className={`px-6 py-3 text-lg font-semibold rounded-lg shadow transition-all min-w-[140px] ${
+                userAnswers[currentQuestion]
+                  ? "bg-gradient-to-r from-indigo-400 to-indigo-500 text-white"
+                  : "bg-gray-300 text-white cursor-not-allowed"
+              }`}
             >
               {currentQuestion === questions.length - 1 ? "Submit" : "Next"}
             </motion.button>
@@ -175,14 +111,14 @@ export default function MultipleChoice() {
   };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.headerContainer}>
+    <div className="min-h-screen px-8 py-12 bg-gradient-to-br from-indigo-50 to-indigo-100 font-inter text-slate-900">
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-8 relative gap-4">
         <Header
           title="Multiple Choice Questions"
           onBack={() => navigate("/")}
           animated={true}
         />
-        <div style={styles.navigationWrapper}>
+        <div className="flex justify-center lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 z-10">
           <QuizNavigation
             questions={questions}
             currentQuestion={currentQuestion}
@@ -192,7 +128,9 @@ export default function MultipleChoice() {
         </div>
       </div>
 
-      <div style={styles.quizContainer}>{renderQuizContent()}</div>
+      <div className="max-w-3xl mx-auto bg-white bg-opacity-90 p-8 rounded-xl shadow-xl border border-indigo-200 backdrop-blur">
+        {renderQuizContent()}
+      </div>
     </div>
   );
 }

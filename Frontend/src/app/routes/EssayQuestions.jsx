@@ -8,49 +8,10 @@ import EssayForm from "../../components/EssayForm";
 import GradingResults from "../../components/GradingResults";
 import { shuffleArray } from "../../utils/quiz";
 import { GRADING_API_URL, MIN_WORDS, ESSAY_COUNT } from "../../constants/quiz";
-import colors from "../../config/colors";
 
 import networks from "../../questions/NetworksEssay.json";
 import os from "../../questions/OperatingSystemsEssay.json";
 import security from "../../questions/SecurityEssay.json";
-const styles = {
-  container: {
-    position: "relative",
-    minHeight: "100vh",
-    padding: "2rem 4rem",
-    background: colors.background,
-    color: colors.text.primary,
-    fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
-  },
-  contentContainer: {
-    maxWidth: "800px",
-    margin: "2rem auto",
-    background: "rgba(255, 255, 255, 0.95)",
-    padding: "2rem",
-    borderRadius: "1rem",
-    boxShadow: "0 4px 20px rgba(99, 102, 241, 0.1)",
-    backdropFilter: "blur(10px)",
-    border: "1px solid rgba(99, 102, 241, 0.2)",
-  },
-  progressBar: {
-    marginBottom: "2rem",
-  },
-  headerContainer: {
-    position: "relative",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: "2rem",
-    width: "100%",
-  },
-  navigationWrapper: {
-    position: "absolute",
-    right: "2rem",
-    top: "50%",
-    transform: "translateY(-50%)",
-    zIndex: 10,
-  },
-};
 
 export default function EssayQuestions() {
   const location = useLocation();
@@ -146,7 +107,7 @@ export default function EssayQuestions() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          style={styles.contentContainer}
+          className="max-w-3xl mx-auto bg-white bg-opacity-95 p-8 rounded-xl shadow-xl border border-indigo-200 backdrop-blur"
         >
           <GradingResults
             questions={questions}
@@ -162,9 +123,9 @@ export default function EssayQuestions() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
-        style={styles.contentContainer}
+        className="max-w-3xl mx-auto bg-white bg-opacity-95 p-8 rounded-xl shadow-xl border border-indigo-200 backdrop-blur"
       >
-        <div style={styles.progressBar}>
+        <div className="mb-8">
           <GradingProgress
             loading={loading}
             progress={gradingProgress / questions.length}
@@ -188,14 +149,14 @@ export default function EssayQuestions() {
   };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.headerContainer}>
+    <div className="min-h-screen px-8 py-12 bg-gradient-to-br from-indigo-50 to-indigo-100 font-inter text-slate-900">
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-8 relative gap-4">
         <Header
           title="✍️ Short Essay Questions"
           onBack={() => navigate("/")}
           animated={true}
         />
-        <div style={styles.navigationWrapper}>
+        <div className="flex justify-center lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 z-10">
           <QuizNavigation
             questions={questions}
             currentQuestion={currentQuestion}
