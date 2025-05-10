@@ -12,6 +12,11 @@ import { GRADING_API_URL, MIN_WORDS, ESSAY_COUNT } from "../../constants/quiz";
 import networks from "../../questions/NetworksEssay.json";
 import os from "../../questions/OperatingSystemsEssay.json";
 import security from "../../questions/SecurityEssay.json";
+const sourceMap = {
+  networks,
+  os,
+  security,
+};
 
 export default function EssayQuestions() {
   const location = useLocation();
@@ -51,11 +56,7 @@ export default function EssayQuestions() {
 
   const initializeQuestions = () => {
     const topic = location.state?.topic || "networks";
-    const sourceMap = {
-      networks,
-      os,
-      security,
-    };
+
     const allQuestions = sourceMap[topic] || networks;
     const shownIds = getShownEssayIds(topic);
 
@@ -66,7 +67,6 @@ export default function EssayQuestions() {
     let selected;
 
     if (availableQuestions.length < questionCount) {
-      // Reset shown and shuffle fresh pool
       localStorage.setItem(`shownEssay_${topic}`, JSON.stringify([]));
       selected = shuffleArray([...allQuestions]).slice(0, questionCount);
     } else {
