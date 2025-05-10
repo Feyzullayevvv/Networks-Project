@@ -79,52 +79,50 @@ export default function EssayQuestions() {
     setUserAnswers((prev) => ({ ...prev, [currentQuestion]: text }));
   };
 
-  const gradeAnswer = async (idx) => {
-    const answer = userAnswers[idx] || "";
-    const wc = countWords(answer);
+  const gradeAllAnswers = async () => {
+    setLoading(true);
+    const gradedResults = {};
 
-    if (wc < MIN_WORDS) {
-      setGraded((prev) => ({
-        ...prev,
-        [idx]: {
+    for (let i = 0; i < questions.length; i++) {
+      const answer = userAnswers[i] || "";
+      const wc = countWords(answer);
+
+      if (wc < MIN_WORDS) {
+        gradedResults[i] = {
           score: 0,
           feedback: `⚠️ Only ${wc} words (min ${MIN_WORDS})`,
           model_answer: "",
-        },
-      }));
-      setGradingProgress((p) => p + 1);
-      return;
-    }
+        };
+        continue;
+      }
 
-    setLoading(true);
-    try {
-      const res = await fetch(GRADING_API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          question: questions[idx].question,
-          answer,
-        }),
-      });
-      const data = await res.json();
-      setGraded((prev) => ({ ...prev, [idx]: data }));
-    } catch (error) {
-      setGraded((prev) => ({
-        ...prev,
-        [idx]: {
+      try {
+        const res = await fetch(GRADING_API_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            question: questions[i].question,
+            answer,
+          }),
+        });
+        const data = await res.json();
+        gradedResults[i] = data;
+      } catch (error) {
+        gradedResults[i] = {
           score: 0,
           feedback: "❌ Error grading this answer.",
           model_answer: "",
-        },
-      }));
-    } finally {
-      setLoading(false);
-      setGradingProgress((p) => p + 1);
+        };
+      }
     }
+
+    setGraded(gradedResults);
+    setGradingProgress(questions.length);
+    setLoading(false);
+    setSubmitted(true);
   };
 
-  const handleNext = async () => {
-    await gradeAnswer(currentQuestion);
+  const handleNext = () => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion((prev) => prev + 1);
     }
@@ -137,8 +135,7 @@ export default function EssayQuestions() {
   };
 
   const handleSubmit = async () => {
-    await gradeAnswer(currentQuestion);
-    setSubmitted(true);
+    await gradeAllAnswers();
   };
 
   const currentText = userAnswers[currentQuestion] || "";

@@ -44,9 +44,26 @@ const GradingResults = ({ questions, userAnswers, graded }) => (
             <span>💡</span>
             <span>Feedback</span>
           </div>
-          <div className="text-slate-700 leading-relaxed">
-            {graded[i] || "No feedback available"}
-          </div>
+          {graded[i] && typeof graded[i] === "object" ? (
+            <div className="text-slate-700 leading-relaxed space-y-2">
+              <p>
+                <strong>Score:</strong> {graded[i].score}
+              </p>
+              <p>
+                <strong>Feedback:</strong> {graded[i].feedback}
+              </p>
+              <div>
+                <p className="font-medium">Model Answer:</p>
+                <p className="italic text-slate-600">
+                  {graded[i].model_answer}
+                </p>
+              </div>
+            </div>
+          ) : (
+            <div className="text-slate-700 leading-relaxed">
+              {graded[i] || "No feedback available"}
+            </div>
+          )}
         </div>
       </motion.div>
     ))}

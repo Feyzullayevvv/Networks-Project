@@ -12,7 +12,7 @@ app.use(express.json());
 
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({
-  model: "gemini-2.5-pro-preview-05-06",
+  model: "gemini-2.0-flash-001",
 });
 
 app.post("/grade", async (req, res) => {
@@ -42,16 +42,30 @@ Return your response in this JSON format:
 
   try {
     const result = await model.generateContent([prompt]);
-    const text = result.response.text();
+    const raw = result.response.text();
+    console.log("🧠 Raw Gemini Output:\n", raw);
 
-    const parsed = JSON.parse(text);
+    // Remove Markdown code fences like ```json or ```
+    const cleaned = raw
+      .replace(/```json/g, "")
+      .replace(/```/g, "")
+      .trim();
+
+    // Find JSON start
+    const jsonStart = cleaned.indexOf("{");
+    if (jsonStart === -1) {
+      throw new Error("No JSON object found in Gemini response");
+    }
+
+    const jsonText = cleaned.slice(jsonStart);
+
+    const parsed = JSON.parse(jsonText);
     res.json(parsed);
   } catch (err) {
-    alert("Error in  grading:", err);
-
-    res
-      .status(500)
-      .json({ error: "Gemini API request failed or response was malformed." });
+    console.error("❌ Error parsing Gemini response:", err.message);
+    res.status(500).json({
+      error: "Gemini API response was not valid JSON.",
+    });
   }
 });
 
