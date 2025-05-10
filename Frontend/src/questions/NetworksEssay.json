@@ -79,14 +79,13 @@
     "id": 20,
     "question": "Describe typical message exchange patterns in distributed systems, such as request-response and publish-subscribe. Use an example to illustrate the flow of communication."
   },
-  [
-    {
-      "id": 21,
-      "question": "Explain the structure and purpose of HTTP headers in a web communication. Describe common header fields such as Host, User-Agent, Content-Type, and how they affect client-server interaction."
-    },
-    {
-      "id": 22,
-      "question": "Discuss how the transport layer ensures end-to-end communication between applications. Explain the interaction between the application layer and transport layer during data transmission."
-    }
-  ]
+
+  {
+    "id": 21,
+    "question": "Explain the structure and purpose of HTTP headers in a web communication. Describe common header fields such as Host, User-Agent, Content-Type, and how they affect client-server interaction."
+  },
+  {
+    "id": 22,
+    "question": "Discuss how the transport layer ensures end-to-end communication between applications. Explain the interaction between the application layer and transport layer during data transmission."
+  }
 ]
