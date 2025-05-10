@@ -40,7 +40,6 @@ export default function EssayQuestions() {
     const shown = getShownEssayIds(topic);
     const updated = [...shown, ...newQuestions.map((q) => q.id)];
 
-    // Reset if exhausted
     if (updated.length >= (sourceMap[topic]?.length || 0)) {
       localStorage.setItem(`shownEssay_${topic}`, JSON.stringify([]));
       return [];
@@ -56,16 +55,13 @@ export default function EssayQuestions() {
 
   const initializeQuestions = () => {
     const topic = location.state?.topic || "networks";
-
     const allQuestions = sourceMap[topic] || networks;
     const shownIds = getShownEssayIds(topic);
-
     const availableQuestions = allQuestions.filter(
       (q) => !shownIds.includes(q.id)
     );
 
     let selected;
-
     if (availableQuestions.length < questionCount) {
       localStorage.setItem(`shownEssay_${topic}`, JSON.stringify([]));
       selected = shuffleArray([...allQuestions]).slice(0, questionCount);
@@ -90,7 +86,11 @@ export default function EssayQuestions() {
     if (wc < MIN_WORDS) {
       setGraded((prev) => ({
         ...prev,
-        [idx]: `⚠️ Only ${wc} words (min ${MIN_WORDS})`,
+        [idx]: {
+          score: 0,
+          feedback: `⚠️ Only ${wc} words (min ${MIN_WORDS})`,
+          model_answer: "",
+        },
       }));
       setGradingProgress((p) => p + 1);
       return;
@@ -106,12 +106,16 @@ export default function EssayQuestions() {
           answer,
         }),
       });
-      const { result } = await res.json();
-      setGraded((prev) => ({ ...prev, [idx]: result || "No feedback." }));
+      const data = await res.json();
+      setGraded((prev) => ({ ...prev, [idx]: data }));
     } catch (error) {
       setGraded((prev) => ({
         ...prev,
-        [idx]: "❌ Error grading this answer.",
+        [idx]: {
+          score: 0,
+          feedback: "❌ Error grading this answer.",
+          model_answer: "",
+        },
       }));
     } finally {
       setLoading(false);
@@ -147,7 +151,7 @@ export default function EssayQuestions() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="max-w-3xl mx-auto bg-white bg-opacity-95 p-8 rounded-xl shadow-xl border border-indigo-200 backdrop-blur"
+          className="max-w-3xl mx-auto bg-white bg-opacity-95 p-6 md:p-8 rounded-xl shadow-xl border border-indigo-200 backdrop-blur"
         >
           <GradingResults
             questions={questions}
@@ -163,7 +167,7 @@ export default function EssayQuestions() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
-        className="max-w-3xl mx-auto bg-white bg-opacity-95 p-8 rounded-xl shadow-xl border border-indigo-200 backdrop-blur"
+        className="max-w-3xl mx-auto bg-white bg-opacity-95 p-6 md:p-8 rounded-xl shadow-xl border border-indigo-200 backdrop-blur"
       >
         <div className="mb-8">
           <GradingProgress
@@ -189,7 +193,7 @@ export default function EssayQuestions() {
   };
 
   return (
-    <div className="min-h-screen px-8 py-12 bg-gradient-to-br from-indigo-50 to-indigo-100 font-inter text-slate-900">
+    <div className="min-h-screen px-4 sm:px-6 lg:px-8 py-10 bg-gradient-to-br from-indigo-50 to-indigo-100 font-inter text-slate-900">
       <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-8 relative gap-4">
         <Header
           title="✍️ Short Essay Questions"

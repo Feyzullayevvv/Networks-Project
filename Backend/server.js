@@ -18,29 +18,40 @@ const model = genAI.getGenerativeModel({
 app.post("/grade", async (req, res) => {
   const { question, answer } = req.body;
 
-  const prompt = `You are a grading assistant for the CS2005 Networks and Operating Systems module. Based strictly on the official lecture slides and the exam briefing document, perform the following tasks:
+  const prompt = `You are a grading assistant for the CS2005 Networks and Operating Systems module. Based strictly on the official lecture slides and exam briefing, do the following:
 
-1. Provide a model answer to the question below, aiming for approximately 300 words.
-2. Assign a grade from 0 to 100 to this model answer.
-3. Offer a concise explanation (maximum 30 words) discussing:
-   - The accuracy and completeness of the answer.
-   - Use of correct terminology and concepts.
-   - Structure and clarity of the response.
-   - Areas for improvement.
+1. Evaluate the student's answer to the following question.
+2. Assign a percentage score (0 to 100).
+3. Give a concise explanation (max 30 words) of why the answer received this score.
+4. Generate a model answer limited to 200 words that focuses on areas the student missed or explained poorly.
 
-Be objective and avoid making up facts. Be strict if the answer lacks specificity, structure, or correct terminology.
+Keep the total output under 250 words. Do NOT restate the question. Use clear, accurate terminology only.
 
 QUESTION:
-${question}`;
+${question}
+
+STUDENT ANSWER:
+${answer}
+
+Return your response in this JSON format:
+{
+  "score": [number],
+  "feedback": "[max 30-word explanation]",
+  "model_answer": "[a clear and accurate 200-word max model answer]"
+}`;
 
   try {
     const result = await model.generateContent([prompt]);
     const text = result.response.text();
 
-    res.json({ result: text });
+    const parsed = JSON.parse(text);
+    res.json(parsed);
   } catch (err) {
-    console.error("Gemini grading error:", err);
-    res.status(500).json({ error: "Gemini API request failed." });
+    alert("Error in  grading:", err);
+
+    res
+      .status(500)
+      .json({ error: "Gemini API request failed or response was malformed." });
   }
 });
 
