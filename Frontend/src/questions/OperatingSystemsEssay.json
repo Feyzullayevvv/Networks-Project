@@ -1,94 +1,94 @@
 [
   {
     "id": 1,
-    "question": "What is a process? Describe its structure and how it is managed by the operating system."
+    "question": "Define what a process is in the context of operating systems. Describe the key components that make up a process and how the operating system manages its execution and resources."
   },
   {
     "id": 2,
-    "question": "Explain the process lifecycle and the role of process states. Use diagrams if necessary."
+    "question": "Explain the complete lifecycle of a process, including the main process states and transitions. Support your explanation with diagrams and real-world analogies where helpful."
   },
   {
     "id": 3,
-    "question": "Describe how threads differ from processes. What are the advantages of using threads?"
+    "question": "Compare threads and processes in terms of memory, communication, and CPU utilization. Discuss why multithreading is used in modern applications and provide examples of its benefits."
   },
   {
     "id": 4,
-    "question": "Explain the concept of a critical section. Why is it important in concurrent programming?"
+    "question": "What is a critical section in concurrent programming? Explain why mutual exclusion is required and discuss possible consequences if it is not enforced."
   },
   {
     "id": 5,
-    "question": "What are the key services provided by an operating system? Explain their purpose."
+    "question": "List and describe the major services provided by an operating system. For each, explain its function and how it supports both users and application programs."
   },
   {
     "id": 6,
-    "question": "Discuss system calls and their role in operating systems. Give examples."
+    "question": "What are system calls, and how do they allow programs to interact with the operating system? Provide examples from Unix/Linux and explain how these calls are invoked and processed."
   },
   {
     "id": 7,
-    "question": "Compare mutex locks, semaphores, and monitors in terms of synchronization."
+    "question": "Compare mutex locks, semaphores, and monitors in terms of structure, usage, and effectiveness for synchronization in multi-threaded environments."
   },
   {
     "id": 8,
-    "question": "What is the bounded buffer problem? Describe a solution using semaphores."
+    "question": "Describe the bounded buffer (producer-consumer) problem and provide a step-by-step solution using semaphores, explaining how synchronization and mutual exclusion are achieved."
   },
   {
     "id": 9,
-    "question": "Explain the race condition and how it can be prevented in an operating system."
+    "question": "Define what a race condition is in operating systems. Provide examples and explain the conditions under which it occurs and how it can be avoided."
   },
   {
     "id": 10,
-    "question": "Define process scheduling. Describe the role of schedulers and queues."
+    "question": "What is process scheduling and why is it necessary? Describe the role of schedulers and queues in ensuring fair and efficient use of CPU resources."
   },
   {
     "id": 11,
-    "question": "Describe thread states in Java. How are they managed during execution?"
+    "question": "Outline the main states of a Java thread and explain how thread transitions occur during execution. Provide Java code snippets where applicable."
   },
   {
     "id": 12,
-    "question": "What is the difference between user-level threads and kernel-level threads?"
+    "question": "Explain the difference between user-level and kernel-level threads. Discuss their respective advantages, disadvantages, and how each is managed by the system."
   },
   {
     "id": 13,
-    "question": "Define starvation and deadlock. How can each be avoided or resolved?"
+    "question": "Define starvation and deadlock in operating systems. Explain how these problems arise and compare strategies for prevention, avoidance, and recovery."
   },
   {
     "id": 14,
-    "question": "Discuss the role of the Process Control Block (PCB) in operating systems."
+    "question": "Discuss the role of the Process Control Block (PCB) in process management. Explain what information it stores and how it supports context switching."
   },
   {
     "id": 15,
-    "question": "Explain the use and function of system programs in OS design."
+    "question": "What are system programs in the context of operating system architecture? Describe their role and give examples of how they support user and application interaction with the OS."
   },
   {
     "id": 16,
-    "question": "What is parallelism and how does it differ from concurrency?"
+    "question": "Define the concept of a critical section and describe the key challenges in designing solutions for mutual exclusion in concurrent programming environments."
   },
   {
     "id": 17,
-    "question": "Describe the synchronization problem and the requirements for its solution."
+    "question": "What is the synchronization problem in operating systems? Discuss the conditions and requirements for a correct and fair solution to this problem."
   },
   {
     "id": 18,
-    "question": "What interfaces does an operating system provide to users and programs?"
+    "question": "Explain the interfaces provided by an operating system to users and application programs. Distinguish between user interfaces, system calls, and APIs with examples."
   },
   {
     "id": 19,
-    "question": "Explain how semaphores can be used to solve the producer-consumer problem."
+    "question": "Describe how semaphores are used to solve the producer-consumer problem. Explain the operations involved and the logic for ensuring correct synchronization."
   },
   {
     "id": 20,
-    "question": "Discuss Java thread lifecycle states and transitions with examples."
+    "question": "Discuss the lifecycle of a Java thread with real code examples. Explain how transitions occur between NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, and TERMINATED states."
   },
   {
     "id": 21,
-    "question": "Discuss the main states of a Java Thread. How does it transition between them and what events trigger the transitions?"
+    "question": "Explain the main states of a Java thread and what events trigger transitions between these states. Support your answer with examples from Java applications."
   },
   {
     "id": 22,
-    "question": "What are system programs? What is their purpose and how are they different from application programs? Describe FIVE categories."
+    "question": "What are system programs? Describe their role and purpose in operating systems, and provide a detailed explanation of five main categories, such as file management and communication."
   },
   {
     "id": 23,
-    "question": "What is parallelism and concurrency? Compare and contrast them with examples."
+    "question": "What is the difference between concurrency and parallelism? Compare them with examples from real applications and explain their relevance in modern computing environments."
   }
 ]

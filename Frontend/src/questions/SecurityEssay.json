@@ -1,86 +1,86 @@
 [
   {
     "id": 1,
-    "question": "Discuss five types of program threats and provide an example for each."
+    "question": "Explain five distinct types of program threats in detail. For each, describe its mechanism, possible impact, and give a concrete example of its use in real-world or simulated scenarios."
   },
   {
     "id": 2,
-    "question": "What are the differences between symmetric and asymmetric encryption? Provide examples."
+    "question": "Compare symmetric and asymmetric encryption algorithms in terms of key management, security, performance, and application. Support your discussion with practical examples and use-cases for each."
   },
   {
     "id": 3,
-    "question": "Describe five types of accidental or malicious security violations. At which levels can security be enforced?"
+    "question": "Discuss five categories of security violations that can be either accidental or malicious. Additionally, explain at which system levels (physical, human, OS, network) preventive measures can be applied for each."
   },
   {
     "id": 4,
-    "question": "Explain the essential properties of a good encryption algorithm."
+    "question": "What characteristics define a secure encryption algorithm? Explain essential properties such as key secrecy, resistance to brute-force attacks, and computational feasibility, referencing both symmetric and asymmetric methods."
   },
   {
     "id": 5,
-    "question": "Define and differentiate between cryptography, encryption, and decryption."
+    "question": "Define cryptography, encryption, and decryption, and explain how these processes interact to secure data. Use examples to illustrate the importance of keys, plaintext, and ciphertext in modern systems."
   },
   {
     "id": 6,
-    "question": "Discuss system-level security threats and give real-world examples."
+    "question": "Discuss system-level security threats, including misuse of OS resources and vulnerabilities in protection mechanisms. Provide examples of attacks and how these can be mitigated through OS-level controls."
   },
   {
     "id": 7,
-    "question": "Explain how authentication and authorization differ and how each is implemented in systems."
+    "question": "Differentiate between authentication and authorization. Explain how each works in practical systems, what methods are commonly used, and what vulnerabilities they may introduce if improperly implemented."
   },
   {
     "id": 8,
-    "question": "List and explain three levels at which security can be applied in a computer system."
+    "question": "Security enforcement operates at different levels within computing systems. Describe three such levels in detail, providing examples of how each contributes to a layered security model."
   },
   {
     "id": 9,
-    "question": "Compare DES and RSA encryption algorithms. In which use-cases are they applied?"
+    "question": "Compare the DES and RSA encryption algorithms. Discuss their historical significance, core mechanics, strengths and weaknesses, and scenarios in which one is more appropriate than the other."
   },
   {
     "id": 10,
-    "question": "What are the common threats in network security? How can they be mitigated?"
+    "question": "Identify common threats in network security such as spoofing, sniffing, and denial-of-service attacks. Describe mitigation strategies at the network and transport layers."
   },
   {
     "id": 11,
-    "question": "Describe the concept of public and private keys. How are they used in secure communication?"
+    "question": "Describe the concept and functioning of public and private keys in asymmetric encryption. How do these enable secure communication, and what challenges are associated with key distribution?"
   },
   {
     "id": 12,
-    "question": "What are program-level attacks? Give three examples and their consequences."
+    "question": "Define program-level attacks and explain three types such as logic bombs, buffer overflows, and trapdoors. Detail their typical implementation and impact on systems."
   },
   {
     "id": 13,
-    "question": "Explain how data can be protected from interception during transmission over an untrusted network."
+    "question": "How can data be protected from interception on untrusted networks? Discuss encryption protocols, secure key exchange, and real-world techniques like TLS/SSL."
   },
   {
     "id": 14,
-    "question": "Discuss the role of encryption in maintaining data integrity and confidentiality."
+    "question": "Describe how encryption supports data confidentiality and integrity. Include examples such as secure email, HTTPS, and VPNs to illustrate the dual role of encryption."
   },
   {
     "id": 15,
-    "question": "What is the difference between passive and active security attacks? Give examples."
+    "question": "Differentiate between passive and active security attacks. Provide two examples of each and explain the consequences and typical detection/prevention methods."
   },
   {
     "id": 16,
-    "question": "Define types of Viruses"
+    "question": "Discuss the various types of computer viruses, including polymorphic, macro, and file viruses. Explain how each propagates and how systems can defend against them."
   },
   {
     "id": 17,
-    "question": "Describe how firewalls and intrusion detection systems contribute to security."
+    "question": "Describe how firewalls and intrusion detection systems operate. Explain the differences between host-based and network-based solutions and their roles in a comprehensive security strategy."
   },
   {
     "id": 18,
-    "question": "Define types of System and Network Threats?"
+    "question": "List and describe common system and network threats such as worms, port scanning, and denial-of-service. How do they exploit system weaknesses, and what are best practices for defense?"
   },
   {
     "id": 19,
-    "question": "List common cryptography terms and define their significance (e.g., cipher, plaintext, key)."
+    "question": "Define and elaborate on critical cryptography terms including cipher, key, plaintext, ciphertext, and cryptosystem. Discuss how each component contributes to secure communication."
   },
   {
     "id": 20,
-    "question": "Describe Cryptography and its terms"
+    "question": "Provide a detailed overview of cryptographic techniques and terminology. Explain how terms like cipher, cryptanalysis, and encryption algorithm interrelate in the broader cryptography landscape."
   },
   {
     "id": 21,
-    "question": "What are accidental or malicious security violations?"
+    "question": "What are accidental or malicious security violations? Explain the difference, provide three examples of each, and discuss organizational or technical safeguards against them."
   }
 ]

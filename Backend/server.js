@@ -11,7 +11,9 @@ app.use(express.json());
 7;
 
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({
+  model: "gemini-2.5-pro-preview-05-06",
+});
 
 app.post("/grade", async (req, res) => {
   const { question, answer } = req.body;
@@ -19,10 +21,14 @@ app.post("/grade", async (req, res) => {
   const prompt = `You are a grading assistant for the CS2005 Networks and Operating Systems module. Based strictly on the official lecture slides and the exam briefing document, assign a grade from 0 to 100 to the following answer.
 
 Return ONLY:
-- A percentage score (e.g. 87)
-- A short explanation of why the answer received this score.
+- A percentage score (e.g., 87)
+- A concise explanation (max 350 words) discussing:
+  - The accuracy and completeness of the answer
+  - Use of correct terminology and concepts
+  - Structure and clarity of the response
+  - Areas for improvement
 
-Be objective, accurate, and avoid making up facts. Be strict if the answer lacks specificity, structure, or correct terminology.
+Be objective and avoid making up facts. Be strict if the answer lacks specificity, structure, or correct terminology.
 
 QUESTION:
 ${question}

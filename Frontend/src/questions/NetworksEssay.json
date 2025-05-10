@@ -1,90 +1,92 @@
 [
   {
     "id": 1,
-    "question": "Explain the client-server model and the role of sockets in enabling network communication. Include examples."
+    "question": "Describe the client-server model in detail and explain how sockets enable communication between processes across a network. Include practical examples of how socket programming is used."
   },
   {
     "id": 2,
-    "question": "Discuss the main differences between TCP and UDP. In what scenarios would each be preferred?"
+    "question": "Compare TCP and UDP protocols in terms of reliability, connection handling, and use-cases. Discuss scenarios where one is preferred over the other and justify your reasoning."
   },
   {
     "id": 3,
-    "question": "Describe the structure and function of IPv4 datagrams, including fragmentation and reassembly."
+    "question": "Explain the structure and purpose of an IPv4 datagram. Describe how fragmentation and reassembly work during packet transmission across networks."
   },
   {
     "id": 4,
-    "question": "Compare and contrast the OSI and TCP/IP models. Highlight their layers and primary functions."
+    "question": "Compare the OSI and TCP/IP network models by describing each layer's role and mapping functions between the two models. Highlight their significance in protocol design."
   },
   {
     "id": 5,
-    "question": "Describe the responsibilities of each layer in the OSI model, providing examples of protocols at each layer."
+    "question": "Describe the responsibilities of each layer in the OSI model. For each layer, provide a practical example of a protocol and explain its function in the communication process."
   },
   {
     "id": 6,
-    "question": "Explain how HTTP functions as a web application protocol. Describe the request/response cycle."
+    "question": "Explain how HTTP operates as a stateless application-layer protocol. Discuss the structure of HTTP requests and responses, including the roles of headers and status codes."
   },
   {
     "id": 7,
-    "question": "What are protocol ports and why are they essential in networking? Provide examples of well-known ports."
+    "question": "Define protocol ports and explain their role in identifying specific processes on a host. Provide examples of well-known port numbers and the services that use them."
   },
   {
     "id": 8,
-    "question": "Illustrate how email services use SMTP, POP3, IMAP and HTTP protocols."
+    "question": "Describe how email systems use SMTP, POP3, IMAP, and HTTP to send, retrieve, and display messages. Highlight the differences in functionality between these protocols."
   },
   {
     "id": 9,
-    "question": "Discuss the concept of reliable data transfer. How does TCP achieve it?"
+    "question": "Discuss the concept of reliable data transfer in networking. Describe how TCP ensures reliability through error detection, acknowledgments, and retransmission."
   },
   {
     "id": 10,
-    "question": "Define congestion control and flow control. Why are they important in the transport layer?"
+    "question": "Define congestion control and flow control in the context of transport protocols. Explain how TCP implements both mechanisms and why they are essential for performance."
   },
   {
     "id": 11,
-    "question": "Explain how processes communicate over a network using IP addresses and port numbers."
+    "question": "Explain how processes in distributed systems communicate using IP addresses and port numbers. Describe the significance of each in socket-based networking."
   },
   {
     "id": 12,
-    "question": "Describe the role of the router in a network. What are its main components?"
+    "question": "Describe the role of a router in a network. List its main components and explain how they work together to forward packets between networks."
   },
   {
     "id": 13,
-    "question": "Compare distance-vector and link-state routing algorithms. Which is more efficient and why?"
+    "question": "Compare distance-vector and link-state routing algorithms. Discuss their mechanisms, convergence behavior, and which is more scalable in large networks."
   },
   {
     "id": 14,
-    "question": "What is multiplexing and demultiplexing in transport services? Explain with examples."
+    "question": "What are multiplexing and demultiplexing in transport-layer services? Describe how port numbers and headers facilitate these functions with examples."
   },
   {
     "id": 15,
-    "question": "Describe how IPv6 differs from IPv4. What are its main advantages?"
+    "question": "Explain the key differences between IPv4 and IPv6 in terms of address format, header structure, and additional features. What are the benefits of adopting IPv6?"
   },
   {
     "id": 16,
-    "question": "Discuss the use of acknowledgments and sequence numbers in TCP segment structures."
+    "question": "Discuss the purpose of acknowledgments and sequence numbers in TCP. Explain how they support ordered, reliable data delivery and loss detection."
   },
   {
     "id": 17,
-    "question": "Define process scheduling. Describe the role of schedulers and queues."
+    "question": "Define process scheduling in operating systems. Describe the types of queues and schedulers used in managing process execution and system performance."
   },
   {
     "id": 18,
-    "question": "Discuss peer-to-peer (P2P) networking. How does it differ from the client-server model?"
+    "question": "Explain peer-to-peer (P2P) networking. Compare it with the client-server model, and discuss the benefits and challenges of P2P architectures."
   },
   {
     "id": 19,
-    "question": "What is throughput in networking? How does it differ from data rate and latency?"
+    "question": "Describe the core transport-layer services such as flow control, error control, and multiplexing/demultiplexing. Explain how these services support communication between applications."
   },
   {
     "id": 20,
-    "question": "Explain message exchange patterns in distributed systems. Give an example of a typical message flow."
+    "question": "Describe typical message exchange patterns in distributed systems, such as request-response and publish-subscribe. Use an example to illustrate the flow of communication."
   },
-  {
-    "id": 21,
-    "question": "Describe how firewalls and intrusion detection systems contribute to security."
-  },
-  {
-    "id": 22,
-    "question": "List and explain three levels at which security can be applied in a computer system."
-  }
+  [
+    {
+      "id": 21,
+      "question": "Explain the structure and purpose of HTTP headers in a web communication. Describe common header fields such as Host, User-Agent, Content-Type, and how they affect client-server interaction."
+    },
+    {
+      "id": 22,
+      "question": "Discuss how the transport layer ensures end-to-end communication between applications. Explain the interaction between the application layer and transport layer during data transmission."
+    }
+  ]
 ]
