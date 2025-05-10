@@ -49,7 +49,7 @@
   },
   {
     "id": 13,
-    "question": "(?))"
+    "question": "Explain how data can be protected from interception during transmission over an untrusted network."
   },
   {
     "id": 14,
@@ -78,5 +78,9 @@
   {
     "id": 20,
     "question": "How can multi-factor authentication increase the security of systems and services?"
+  },
+  {
+    "id": 21,
+    "question": "What are accidental or malicious security violations? Discuss four types and three levels at which security measures could be taken."
   }
 ]

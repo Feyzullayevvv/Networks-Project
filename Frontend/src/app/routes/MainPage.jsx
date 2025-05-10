@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Cpu, PenTool, Shuffle, Bot, Plus, Minus } from "lucide-react";
 import ExamCard from "../../components/ExamCard";
+import TopicSelector from "../../components/TopicSelector";
 
 const colors = {
   background: "linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%)",
@@ -58,13 +59,18 @@ const DiscordIcon = () => (
 export default function MainPage() {
   const [examMode, setExamMode] = useState(null);
   const [essayCount, setEssayCount] = useState(3);
+  const [selectedTopic, setSelectedTopic] = useState("networks");
+
   const navigate = useNavigate();
 
   const handleStart = () => {
     if (!examMode) return;
     const routes = {
       mcq: { path: "/mcq", state: { mode: "mcq" } },
-      essay: { path: "/essay", state: { mode: "essay", count: essayCount } },
+      essay: {
+        path: "/essay",
+        state: { mode: "essay", count: essayCount, topic: selectedTopic },
+      },
       both: { path: "/MockExam", state: { mode: "both" } },
     };
     const route = routes[examMode];
@@ -129,6 +135,7 @@ export default function MainPage() {
           isSelected={examMode === "mcq"}
           onClick={() => setExamMode("mcq")}
         />
+
         <ExamCard
           type="essay"
           icon={PenTool}
@@ -137,12 +144,24 @@ export default function MainPage() {
           isSelected={examMode === "essay"}
           onClick={() => setExamMode("essay")}
         >
-          <QuestionCount
-            count={essayCount}
-            setCount={setEssayCount}
-            visible={examMode === "essay"}
-          />
+          <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch justify-center gap-3 mt-4 w-full">
+            <div className="flex-1 min-w-[180px] flex justify-center">
+              <QuestionCount
+                count={essayCount}
+                setCount={setEssayCount}
+                visible={examMode === "essay"}
+              />
+            </div>
+            <div className="flex-1 min-w-[180px] flex justify-center">
+              <TopicSelector
+                selectedTopic={selectedTopic}
+                setSelectedTopic={setSelectedTopic}
+                visible={examMode === "essay"}
+              />
+            </div>
+          </div>
         </ExamCard>
+
         <ExamCard
           type="both"
           icon={Shuffle}

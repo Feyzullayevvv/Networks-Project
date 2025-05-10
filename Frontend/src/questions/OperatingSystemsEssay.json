@@ -78,5 +78,17 @@
   {
     "id": 20,
     "question": "Discuss Java thread lifecycle states and transitions with examples."
+  },
+  {
+    "id": 21,
+    "question": "Discuss the main states of a Java Thread. How does it transition between them and what events trigger the transitions?"
+  },
+  {
+    "id": 22,
+    "question": "What are system programs? What is their purpose and how are they different from application programs? Describe FIVE categories."
+  },
+  {
+    "id": 23,
+    "question": "What is parallelism and concurrency? Compare and contrast them with examples."
   }
 ]

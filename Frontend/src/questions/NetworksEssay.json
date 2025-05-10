@@ -63,7 +63,10 @@
     "id": 16,
     "question": "Discuss the use of acknowledgments and sequence numbers in TCP segment structures."
   },
-
+  {
+    "id": 17,
+    "question": "Define process scheduling. Describe the role of schedulers and queues."
+  },
   {
     "id": 18,
     "question": "Discuss peer-to-peer (P2P) networking. How does it differ from the client-server model?"
@@ -75,5 +78,13 @@
   {
     "id": 20,
     "question": "Explain message exchange patterns in distributed systems. Give an example of a typical message flow."
+  },
+  {
+    "id": 21,
+    "question": "Describe how firewalls and intrusion detection systems contribute to security."
+  },
+  {
+    "id": 22,
+    "question": "List and explain three levels at which security can be applied in a computer system."
   }
 ]

@@ -26,15 +26,55 @@ export default function EssayQuestions() {
   const [gradingProgress, setGradingProgress] = useState(0);
   const [graded, setGraded] = useState({});
 
+  const getShownEssayIds = (topic) => {
+    const stored = localStorage.getItem(`shownEssay_${topic}`);
+    return stored ? JSON.parse(stored) : [];
+  };
+
+  const updateShownEssayIds = (topic, newQuestions) => {
+    const shown = getShownEssayIds(topic);
+    const updated = [...shown, ...newQuestions.map((q) => q.id)];
+
+    // Reset if exhausted
+    if (updated.length >= (sourceMap[topic]?.length || 0)) {
+      localStorage.setItem(`shownEssay_${topic}`, JSON.stringify([]));
+      return [];
+    }
+
+    localStorage.setItem(`shownEssay_${topic}`, JSON.stringify(updated));
+    return updated;
+  };
+
   useEffect(() => {
     initializeQuestions();
   }, [questionCount]);
 
   const initializeQuestions = () => {
-    const sets = [networks, os, security];
-    const perSet = Math.ceil(questionCount / sets.length);
-    const pool = sets.flatMap((set) => shuffleArray(set).slice(0, perSet));
-    setQuestions(shuffleArray(pool).slice(0, questionCount));
+    const topic = location.state?.topic || "networks";
+    const sourceMap = {
+      networks,
+      os,
+      security,
+    };
+    const allQuestions = sourceMap[topic] || networks;
+    const shownIds = getShownEssayIds(topic);
+
+    const availableQuestions = allQuestions.filter(
+      (q) => !shownIds.includes(q.id)
+    );
+
+    let selected;
+
+    if (availableQuestions.length < questionCount) {
+      // Reset shown and shuffle fresh pool
+      localStorage.setItem(`shownEssay_${topic}`, JSON.stringify([]));
+      selected = shuffleArray([...allQuestions]).slice(0, questionCount);
+    } else {
+      selected = shuffleArray(availableQuestions).slice(0, questionCount);
+      updateShownEssayIds(topic, selected);
+    }
+
+    setQuestions(selected);
   };
 
   const countWords = (text) => text.trim().split(/\s+/).filter(Boolean).length;
