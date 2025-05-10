@@ -48,12 +48,29 @@ const ReviewSection = ({
 
           {type === "mcq" && (
             <>
-              <div className="bg-indigo-50 text-slate-800 border border-indigo-100 rounded-md p-3 text-sm mb-2">
-                Your answer: {userAnswers[i] || "Not answered"}
-              </div>
-              <div className="text-indigo-500 text-sm font-medium">
-                ✓ Correct answer: {q.answer}
-              </div>
+              {userAnswers[i] === q.answer ? (
+                <div className="bg-green-100 border border-green-400 text-green-800 rounded-md p-3 text-sm mb-2">
+                  ✓ Correct! Your answer: {userAnswers[i]}
+                </div>
+              ) : (
+                <>
+                  <div
+                    className={`rounded-md p-3 text-sm mb-2 border ${
+                      userAnswers[i]
+                        ? "bg-red-100 border-red-400 text-red-800"
+                        : "bg-gray-100 border-gray-400 text-gray-800"
+                    }`}
+                  >
+                    ✗{" "}
+                    {userAnswers[i]
+                      ? `Your answer: ${userAnswers[i]}`
+                      : "Not answered"}
+                  </div>
+                  <div className="text-green-700 text-sm font-medium">
+                    ✓ Correct answer: {q.answer}
+                  </div>
+                </>
+              )}
             </>
           )}
 
