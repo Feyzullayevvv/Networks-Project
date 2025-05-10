@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "question": "Discuss three types of program threats and provide an example for each."
+    "question": "Discuss five types of program threats and provide an example for each."
   },
   {
     "id": 2,
@@ -9,7 +9,7 @@
   },
   {
     "id": 3,
-    "question": "Describe four types of accidental or malicious security violations. At which levels can security be enforced?"
+    "question": "Describe five types of accidental or malicious security violations. At which levels can security be enforced?"
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
   },
   {
     "id": 16,
-    "question": "Explain how viruses, worms, and trojans operate. What measures help prevent them?"
+    "question": "Define types of Viruses"
   },
   {
     "id": 17,
@@ -69,7 +69,7 @@
   },
   {
     "id": 18,
-    "question": "What is hashing? How does it differ from encryption?"
+    "question": "Define types of System and Network Threats?"
   },
   {
     "id": 19,
@@ -77,7 +77,7 @@
   },
   {
     "id": 20,
-    "question": "How can multi-factor authentication increase the security of systems and services?"
+    "question": "Describe Cryptography and its terms"
   },
   {
     "id": 21,
