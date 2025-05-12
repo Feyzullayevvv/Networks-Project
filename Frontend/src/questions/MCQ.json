@@ -937,12 +937,12 @@
     "topic": "Transport Layer",
     "question": "What information does a udp socket use for demultiplexing?",
     "options": [
-      "Source IP and port",
+      "Destination IP and port",
       "MAC address",
       "Only destination port",
       "Protocol type"
     ],
-    "answer": "Source IP and port",
+    "answer": "Destination IP and port",
     "id": 98
   },
   {
